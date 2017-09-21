@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "6cf14945-3d9b-425f-8abf-3d6080143509",
+            "Value": {
+                "id": "f4d7fadc-559a-46b5-ab03-3e390362407c",
+                "resourcePath": "objects\\gittest\\gittest.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7132bcd2-3ca3-4acc-a068-98222d0083c6",
             "Value": {
                 "id": "c002d912-ac2f-4765-98e5-5b705822de79",
