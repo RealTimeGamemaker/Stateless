@@ -37,6 +37,7 @@ ds_list_add(gravities, 0);
 ds_list_add(gravities, 1);
 ds_list_add(gravities, 1);
 ds_list_add(gravities, 1);
+pressing = false;
 states_changed_count=0;
 
 enum states{
