@@ -7,7 +7,7 @@ jmp_speed = 16
 h_accel = 1
 player_frict = 1
 rotation_degrees = 0;
-
+pressing = false;
 states_changed_count=0;
 
 enum states{
