@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "3f9bd8e1-5966-4bc6-bb5d-dd7482c9ac56",
+            "Value": {
+                "id": "59fbe968-331e-49aa-927c-b28e00fa49bc",
+                "resourcePath": "objects\\obj_gui_master\\obj_gui_master.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3ff731f6-3d6d-4b86-b9ac-3e5cb90b1a7f",
             "Value": {
                 "id": "796a3678-809b-4e56-902e-1c4248a94948",
@@ -203,6 +211,14 @@
             "Value": {
                 "id": "475faedd-814b-473c-8773-87e6e041c560",
                 "resourcePath": "sprites\\spr_fire_32x64\\spr_fire_32x64.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "910aed9a-f319-4be6-b8e9-835a8ecf4e3a",
+            "Value": {
+                "id": "32097070-27b1-4d0a-91a7-d7fae5021ad0",
+                "resourcePath": "sprites\\spr_battery\\spr_battery.yy",
                 "resourceType": "GMSprite"
             }
         },
