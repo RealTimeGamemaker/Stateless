@@ -55,3 +55,4 @@ enum actions{
 	jumping
 }
 action=actions.standing;
+hit_points = 4;
