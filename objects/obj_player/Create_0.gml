@@ -25,5 +25,5 @@ enum actions{
 }
 action=actions.standing;
 
+dankmemes = true
 // TAYLOR IS THE BOMB
-
