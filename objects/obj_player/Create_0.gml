@@ -24,4 +24,3 @@ enum actions{
 	jumping
 }
 action=actions.standing;
-
