@@ -24,3 +24,6 @@ enum actions{
 	jumping
 }
 action=actions.standing;
+
+dankmemes = true
+// TAYLOR IS THE BOMB
