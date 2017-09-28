@@ -1,8 +1,8 @@
 {
-    "id": "cb089460-d087-4aab-8872-9ee2c549ec94",
+    "id": "260571a1-9d48-47c2-a1fa-00c80e015349",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_meme_machine",
+    "name": "obj_fallingObject",
     "eventList": [
         
     ],
@@ -22,6 +22,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "811109fd-4f1e-40cc-8116-fd0786601030",
+    "spriteId": "b81d55dd-6d9c-4c6e-8a6c-3c8a1bc690c3",
     "visible": true
 }
