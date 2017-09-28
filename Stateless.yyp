@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "dada08ab-d37f-472f-9bed-83319085468f",
+            "Value": {
+                "id": "aedcae9b-f4e3-4257-ae06-00e18054c018",
+                "resourcePath": "objects\\obj_taylors_text\\obj_taylors_text.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "dcc76794-8f87-47ac-8bff-bf926c7d9e29",
             "Value": {
                 "id": "f6a37ae0-16db-4168-af69-17aad86d2ea3",
