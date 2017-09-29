@@ -7,6 +7,7 @@ jmp_speed = 16
 h_accel = 1
 player_frict = 1
 rotation_degrees = 0;
+flip = 1; // which way the player is facing
 //Makes the acceleration list for each state, index 0 is debug
 accelerations = ds_list_create()
 var solid_accelerations = [h_accel,jmp_speed];
@@ -48,6 +49,16 @@ enum states{
 	
 }
 state = states.solid;
+
+enum liquid_states {
+	idle = 0,
+	moving = 1,
+	falling = 2,
+	landing = 3,
+	top_slope = 4,
+	bot_slope = 5
+}
+liquid_state = liquid_states.idle;
 
 enum actions{
 	standing,
