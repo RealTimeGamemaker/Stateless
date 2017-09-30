@@ -2,9 +2,19 @@
 
 var hinput = keyboard_check(ord("D")) - keyboard_check(ord("A"))
 
+if sprite_index != asset_get_index("spr_player_liquid") {
+	sprite_index = asset_get_index("spr_player_liquid");
+}
+
+// Frame index ranges
+// Idle: 0-150
+// Moving: 151-165
+// Falling: 166-180
+// Landing: 181-185
+
 // ------- ANIMATION STATE SWITCHING ---------
 if liquid_state == liquid_states.landing { // if we are landing, we don't want to be doing anything else
-	if image_index == 3 { // if we are at the end of the landing animation
+	if image_index >= 184 { // if we are at the end of the landing animation
 		liquid_state = liquid_states.idle;
 	}
 }
@@ -26,14 +36,12 @@ else { // if we are moving vertically (it must be down since liquid can't jump)
 
 // ---------- STATE SPECIFIC CODE -----------
 if liquid_state == liquid_states.idle {
-	if sprite_index != asset_get_index("spr_player_liquid_idle") { // change the sprite if it hasn't been already and reset to the first frame
-		sprite_index = asset_get_index("spr_player_liquid_idle");
+	if image_index > 150 {
 		image_index = 0;
 	}
 } else if liquid_state == liquid_states.moving {
-	if sprite_index != asset_get_index("spr_player_liquid_move") { // change the sprite if it hasn't been already and reset to the first frame
-		sprite_index = asset_get_index("spr_player_liquid_move");
-		image_index = 0;
+	if image_index > 165 or image_index < 151 {
+		image_index = 151;
 	}
 	
 	if hinput != 0 { // if we are going to continue moving horizontally
@@ -46,14 +54,13 @@ if liquid_state == liquid_states.idle {
 		velocity[0]= lerp(velocity[0],0,ds_list_find_value(frictions, state));
 	}
 } else if liquid_state == liquid_states.falling {
-	if sprite_index != asset_get_index("spr_player_liquid_falling") { // change the sprite if it hasn't been already and reset to the first frame
-		sprite_index = asset_get_index("spr_player_liquid_falling");
-		image_index = 0;
+	if image_index > 180 or image_index < 166 {
+		image_index = 166;
 	}
+	velocity[0] = 0;
 } else if liquid_state == liquid_states.landing {
-	if sprite_index != asset_get_index("spr_player_liquid_landing") { // change the sprite if it hasn't been already and reset to the first frame
-		sprite_index = asset_get_index("spr_player_liquid_landing");
-		image_index = 0;
+	if image_index < 181 {
+		image_index = 181;
 	}
 } else if liquid_state == liquid_states.top_slope {
 	// Code to handle top slope state
