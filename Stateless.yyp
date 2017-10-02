@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "759786c9-b4b1-47ed-93be-04f6880aece7",
+            "Value": {
+                "id": "2bc869b8-8096-42c3-a300-6af331efb340",
+                "resourcePath": "fonts\\font_par\\font_par.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "7d344276-29f8-457e-99d8-3e5a4f4ed49b",
             "Value": {
                 "id": "2b53e0fe-b45c-4885-af21-7acdec3d7a6d",
