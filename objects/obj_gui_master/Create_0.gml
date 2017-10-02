@@ -5,6 +5,9 @@ heart_2 = 0;
 heart_3 = 0;
 heart_4 = 0;
 
+time = 0;
+realtime = 0;
+
 if (room == rm_test2)
 {
 	room_par = 5;

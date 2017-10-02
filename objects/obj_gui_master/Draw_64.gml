@@ -27,3 +27,8 @@ draw_text((view_width-7), 12, par_message);
 // the white text is the score
 draw_set_color(c_white);
 draw_text((view_width-5), 10, par_message);
+
+draw_set_color(c_black);
+draw_text((view_width / 2)+2,12, string(realtime))
+draw_set_color(c_white);
+draw_text((view_width / 2),10, string(realtime))
