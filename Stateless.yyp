@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "bb5d4403-6108-42a0-8cbc-1a74d06ff9e9",
+            "Value": {
+                "id": "47fb3948-7a5c-4be2-be06-b7fdc4fab4f6",
+                "resourcePath": "fonts\\font_keys\\font_keys.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "c2d0c7fe-611a-40c1-86ba-f41313a5afef",
             "Value": {
                 "id": "5f1de168-0cc5-47d1-b84c-41bd4f522bad",
@@ -468,6 +476,14 @@
                 "id": "ffbb6525-514b-470e-84ae-95ce82ff6015",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fd11a5b0-ba54-4316-9bde-91a7a95bff12",
+            "Value": {
+                "id": "baae235f-bbc2-424b-8b3d-1e135a63f105",
+                "resourcePath": "fonts\\font_popup_message\\font_popup_message.yy",
+                "resourceType": "GMFont"
             }
         },
         {
