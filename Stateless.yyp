@@ -322,7 +322,7 @@
             "Key": "b379b51d-f5b1-40f6-882c-33ee4d5a00f6",
             "Value": {
                 "id": "3b77e87f-4b53-4ef5-ad58-3ff146445a46",
-                "resourcePath": "sprites\\spr_box\\spr_box.yy",
+                "resourcePath": "sprites\\spr_pushable\\spr_pushable.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -2,7 +2,7 @@
     "id": "b379b51d-f5b1-40f6-882c-33ee4d5a00f6",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_box",
+    "name": "spr_pushable",
     "For3D": false,
     "HTile": false,
     "VTile": false,
