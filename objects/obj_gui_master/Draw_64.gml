@@ -30,11 +30,23 @@ draw_text((view_width-5), 10, par_message);
 
 if (hours == 0)
 {
-	time_message = string(minutes) + ":" + string(real_seconds);
+	time_message = "";
+	time_message += string(minutes) + ":";
+	if (real_seconds < 10)
+	{
+		time_message += "0";
+	}
+	time_message += string(real_seconds);
 }
 else
 {
-	time_message = string(hours) + ":" + string(minutes) + ":" + string(real_seconds)
+	time_message = "";
+	time_message += string(hours) + ":" + string(minutes) + ":" 
+	if (real_seconds < 10)
+	{
+		time_message += "0";
+	}
+	time_message += string(real_seconds);
 }
 
 
