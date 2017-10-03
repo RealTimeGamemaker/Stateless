@@ -6,7 +6,9 @@ heart_3 = 0;
 heart_4 = 0;
 
 time = 0;
-realtime = 0;
+real_seconds = 0;
+minutes = 0;
+hours = 0;
 
 if (room == rm_test2)
 {

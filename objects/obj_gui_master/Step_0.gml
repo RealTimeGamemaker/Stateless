@@ -3,5 +3,19 @@
 time++;
 if(time % room_speed == 0)
 {
-	realtime++;
+	real_seconds++;
+
+	if(real_seconds % 60 == 0)
+	{
+		real_seconds -= 60;
+		minutes++;
+		
+		if(minutes % 60 == 0)
+		{
+			minutes -= 60;
+			hours++;
+		}
+	}
+
 }
+

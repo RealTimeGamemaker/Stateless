@@ -28,7 +28,17 @@ draw_text((view_width-7), 12, par_message);
 draw_set_color(c_white);
 draw_text((view_width-5), 10, par_message);
 
+if (hours == 0)
+{
+	time_message = string(minutes) + ":" + string(real_seconds);
+}
+else
+{
+	time_message = string(hours) + ":" + string(minutes) + ":" + string(real_seconds)
+}
+
+
 draw_set_color(c_black);
-draw_text((view_width / 2)+2,12, string(realtime))
+draw_text((view_width / 2)+2,12, time_message)
 draw_set_color(c_white);
-draw_text((view_width / 2),10, string(realtime))
+draw_text((view_width / 2),10, time_message)
