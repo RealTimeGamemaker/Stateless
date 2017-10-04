@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "c3c6ca3f-5909-4775-b8dd-4a814396cd1e",
+            "Value": {
+                "id": "8d44a322-a07e-4c36-bb2f-7e29d639b17b",
+                "resourcePath": "sprites\\spr_ice_plume\\spr_ice_plume.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c4276780-9be8-492c-8483-026ccc86863b",
             "Value": {
                 "id": "3abe0cfe-148a-48c9-9549-216d3e739473",
