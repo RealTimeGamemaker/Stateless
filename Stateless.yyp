@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "2526bab8-af2d-4103-95bd-f6bef0df00c6",
+            "Value": {
+                "id": "5b691cf8-fb07-48d3-94db-3766a59b4462",
+                "resourcePath": "objects\\obj_ice_plume\\obj_ice_plume.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "260571a1-9d48-47c2-a1fa-00c80e015349",
             "Value": {
                 "id": "06106138-e484-4178-991c-a20bdd5d1fa1",
