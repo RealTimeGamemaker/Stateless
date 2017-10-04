@@ -27,6 +27,9 @@ if (popup_countdown > 0)
 	draw_set_color(c_green);
 	draw_text(view_center,view_middle+150,popup_message);
 	
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+	
 	if (temp_timer % room_speed == 0)
 	{
 		popup_countdown--;
