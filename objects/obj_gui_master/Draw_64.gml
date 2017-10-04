@@ -28,6 +28,8 @@ draw_text((view_width-7), 12, par_message);
 draw_set_color(c_white);
 draw_text((view_width-5), 10, par_message);
 
+
+// clock writing code stuff
 if (hours == 0)
 {
 	time_message = "";
@@ -54,3 +56,30 @@ draw_set_color(c_black);
 draw_text((view_width / 2)+2,12, time_message);
 draw_set_color(c_white);
 draw_text((view_width / 2),10, time_message);
+
+if (popup_countdown > 0)
+{
+	view_width = view_get_wport(view_current);
+	view_height = view_get_hport(view_current);
+	view_center = view_width / 2;
+	view_middle = view_height / 2;
+	
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
+	draw_set_font(font_popup_message);
+	
+	draw_set_color(c_black);
+	draw_text(view_center-2,view_middle+148,popup_message);
+
+	draw_set_color(c_green);
+	draw_text(view_center,view_middle+150,popup_message);
+	
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+	
+	if (temp_timer % room_speed == 0)
+	{
+		popup_countdown--;
+	}
+	temp_timer++;
+}
