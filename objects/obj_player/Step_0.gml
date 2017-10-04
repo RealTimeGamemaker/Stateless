@@ -30,7 +30,7 @@ if keyboard_check(vk_escape){
 
 
 //expiramental code
-show_debug_message(string(states_changed_count));
-draw_set_alpha(1);
-draw_set_color(c_black);
-draw_text(200,200,string(states_changed_count));
+//show_debug_message(string(states_changed_count));
+//draw_set_alpha(1);
+//draw_set_color(c_black);
+//draw_text(200,200,string(states_changed_count));

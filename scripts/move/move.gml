@@ -10,10 +10,11 @@ var state = argument1;
 var bounce = argument2;
 
 var collidable_type_names = ["obj_collidable_all"];
+collidable_type_names[1] = "obj_collidable_45";
 
 if (state == states.solid)
 {
-	collidable_type_names[1] = "obj_collidable_solid";
+	collidable_type_names[2] = "obj_collidable_solid";
 }
 
 var collides_x = false;
