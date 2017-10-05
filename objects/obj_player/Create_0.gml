@@ -1,5 +1,5 @@
 /// @description Create Player
-// You can write your code in this editor
+
 velocity = [0,0]
 max_hspeed = 6
 grav = 1
