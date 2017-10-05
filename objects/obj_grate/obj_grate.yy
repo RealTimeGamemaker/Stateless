@@ -1,5 +1,5 @@
 {
-    "id": "747ada25-2cc7-401a-a1ee-4ea5b1711a45",
+    "id": "10ee9b75-0c32-4a38-9759-8157407af63d",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_grate",
@@ -22,6 +22,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "5da0afcb-745d-4b4f-9ea1-debeadcc6e67",
+    "spriteId": "b5ea0b2a-8d0e-4323-abea-73c99898feef",
     "visible": true
 }

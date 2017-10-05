@@ -1,5 +1,5 @@
 {
-    "id": "12b6a29a-2040-41eb-9232-c2989036b32c",
+    "id": "1092f469-5f51-4a3f-bed5-1b3896e1786f",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_vent",
@@ -22,6 +22,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "f80c065d-2286-45b7-90b4-cfaf520f2dd2",
+    "spriteId": "89a68a20-7cd8-4466-ba93-1e53bc9fa5e9",
     "visible": true
 }
