@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "12b6a29a-2040-41eb-9232-c2989036b32c",
+            "Value": {
+                "id": "c6a5d39e-2ac1-46db-9e13-a35ec430e4e2",
+                "resourcePath": "objects\\obj_vent\\obj_vent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1638422c-4a4a-48fa-b2a8-9b9264ce53ae",
             "Value": {
                 "id": "ba510852-62c7-46b0-adde-55cd99c8ae7e",
@@ -167,6 +175,14 @@
             }
         },
         {
+            "Key": "5da0afcb-745d-4b4f-9ea1-debeadcc6e67",
+            "Value": {
+                "id": "8b9d3d60-d170-4469-a1ff-f8fc68d775a5",
+                "resourcePath": "sprites\\spr_grate\\spr_grate.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5e61a1ce-a2bc-4c1b-aaf3-b092d64e8269",
             "Value": {
                 "id": "3c0433b4-0fcb-49b7-a41e-60d55f70d1a4",
@@ -203,6 +219,14 @@
             "Value": {
                 "id": "c002d912-ac2f-4765-98e5-5b705822de79",
                 "resourcePath": "objects\\obj_fire_64x64\\obj_fire_64x64.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "747ada25-2cc7-401a-a1ee-4ea5b1711a45",
+            "Value": {
+                "id": "20fcebe8-e51c-4d63-9dae-630b9984e8a5",
+                "resourcePath": "objects\\obj_grate\\obj_grate.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -492,6 +516,14 @@
                 "id": "ffbb6525-514b-470e-84ae-95ce82ff6015",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f80c065d-2286-45b7-90b4-cfaf520f2dd2",
+            "Value": {
+                "id": "50f0bfac-c683-4395-a985-d9756a84b111",
+                "resourcePath": "sprites\\spr_vent\\spr_vent.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
