@@ -3,6 +3,8 @@
 //This script handles all player movement as well as user input
 event_user(state);
 
+clamp(hit_points, 0, 4)
+
 //switching states code
 
 
