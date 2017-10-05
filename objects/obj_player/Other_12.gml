@@ -1,7 +1,10 @@
 /// @description Liquid State
 
 var hinput = keyboard_check(ord("D")) - keyboard_check(ord("A"))
-
+var tmpaccel = accelerations[state-1];
+var tmpgrav = gravities[state-1];
+var tmpmaxvel = max_velocities[state-1];
+var tmpfrict = frictions[state-1];
 if sprite_index != asset_get_index("spr_player_liquid") {
 	sprite_index = asset_get_index("spr_player_liquid");
 }
@@ -46,12 +49,10 @@ if liquid_state == liquid_states.idle {
 	
 	if hinput != 0 { // if we are going to continue moving horizontally
 		flip = hinput; // make sure we are facing the right way
-		var tmpmaxvel = ds_list_find_value(max_velocities, state)
-		var tmpaccel = ds_list_find_value(accelerations, state) // keep this ish in another variable like velocity is. There should be max_vel, max_acc, vel, acc, grav, extern, friction
 		velocity[0] += hinput * tmpaccel[0];
 		velocity[0] = clamp(velocity[0], -tmpmaxvel[0], tmpmaxvel[0] );
 	} else { // LERP to zero horizontal velocity by a value of 'friction'
-		velocity[0]= lerp(velocity[0],0,ds_list_find_value(frictions, state));
+		velocity[0]= lerp(velocity[0],0,tmpfrict[0]);
 	}
 } else if liquid_state == liquid_states.falling {
 	if image_index > 180 or image_index < 166 {
@@ -72,7 +73,7 @@ if liquid_state == liquid_states.idle {
 // ------------- MOVE ---------------
 // THIS SHOULD BE IN MOVE.GML (all accelerations, velocities, and external forces should be handled by that script)
 if !place_meeting(x, y+1, obj_collidable_all) { // we want to check all valid collidables, not just this one (move script)
-	velocity[1] += ds_list_find_value(gravities, state);
+	velocity[1] += tmpgrav[1];
 }
 
 move(velocity,state,0);
