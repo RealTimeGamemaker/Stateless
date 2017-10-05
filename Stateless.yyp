@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "3e4a3047-12a1-4075-9d6c-64acb7d8c226",
+            "Value": {
+                "id": "2aabe7c3-85d8-42c8-94b1-9248ce5c9761",
+                "resourcePath": "sprites\\spr_fallingObject_triger\\spr_fallingObject_triger.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3f6a93dd-3998-4456-9097-156527277608",
             "Value": {
                 "id": "ce2b5df6-8631-4eba-943a-bb9545a25e05",
@@ -287,6 +295,14 @@
             }
         },
         {
+            "Key": "a46a87fa-79f7-44bd-82bd-42d7645b6cbc",
+            "Value": {
+                "id": "b4f4dc71-15a3-467c-baf7-55b3814d2c1f",
+                "resourcePath": "objects\\obj_fallingObject_trigger\\obj_fallingObject_trigger.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a54fc373-480e-4d84-b1b4-f43ba38e3dda",
             "Value": {
                 "id": "447bdf48-c983-4203-88ee-b977a49c3cf0",
@@ -354,7 +370,7 @@
             "Key": "b81d55dd-6d9c-4c6e-8a6c-3c8a1bc690c3",
             "Value": {
                 "id": "986ac54c-837a-42d4-9787-84bb1e251bad",
-                "resourcePath": "sprites\\sprite13\\sprite13.yy",
+                "resourcePath": "sprites\\spr_fallingObject\\spr_fallingObject.yy",
                 "resourceType": "GMSprite"
             }
         },
