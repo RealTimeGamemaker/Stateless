@@ -19,3 +19,9 @@ if(time % room_speed == 0)
 
 }
 
+if (display_popup_now == true)
+{
+	popup_countdown = popup_length;
+	display_popup_now = false;
+	temp_timer = 1;
+}

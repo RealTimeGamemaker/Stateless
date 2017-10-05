@@ -10,19 +10,8 @@ real_seconds = 0;
 minutes = 0;
 hours = 0;
 
-if (room == rm_test2)
-{
-	room_par = 5;
-}
-else if (room == rm_test)
-{
-	room_par = 7;
-}
-else if (room == (rm_test_slopes))
-{
-	room_par = 1000;
-}
-else
-{
-	room_par = 666;
-}	
+display_popup_now = false;
+popup_message = "";
+popup_length = 5;
+popup_countdown = 0;
+temp_timer = 0;
