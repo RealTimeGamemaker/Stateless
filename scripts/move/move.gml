@@ -9,11 +9,33 @@ var velocity_array = argument0;
 var state = argument1;
 var bounce = argument2;
 
+var tmpfric = frictions[state-1]// Get the friction x,y array for the associated state
+var tmpgrav = gravities[state-1]// Get the gravity x,y array for the associated state
+var tmpextern_x = 0 
+for (i =0; i < ds_list_size(external_forces); i++){//This adds up all the x values for each external force array [x,y]
+	var tmpextern = ds_list_find_value(external_forces,i);
+	tmpextern_x += tmpextern[0];
+}
+var tmpextern_y = 0
+for (i =0; i < ds_list_size(external_forces); i++){//This adds up all the Y values for each external force array [x,y]
+	var tmpextern = ds_list_find_value(external_forces,i);
+	tmpextern_y += tmpextern[1];
+}
+
+var alpha_x = velocity_array[0] + tmpgrav[0] + tmpfric[1] + tmpextern_x; //adding up all the x forces
+var alpha_y = velocity_array[1] + tmpgrav[1] + tmpfric[1] + tmpextern_y; //adding up all the y forces
+var alpha = [alpha_x,alpha_y] //storing the x and y forces into a single array
+
+
+
+
+
 var collidable_type_names = ["obj_collidable_all"];
+collidable_type_names[1] = "obj_collidable_45";
 
 if (state == states.solid)
 {
-	collidable_type_names[1] = "obj_collidable_solid";
+	collidable_type_names[2] = "obj_collidable_solid";
 }
 
 var collides_x = false;
