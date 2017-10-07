@@ -8,6 +8,7 @@
 var velocity_array = argument0;
 var state = argument1;
 var bounce = argument2;
+var hinput = argument3;
 
 var tmpfric = frictions[state-1]// Get the friction x,y array for the associated state
 var tmpgrav = gravities[state-1]// Get the gravity x,y array for the associated state
@@ -52,16 +53,27 @@ for (i = 0; i < array_length_1d(collidable_type_names); i++) {
 }
 
 if (collides_x == true) {
-		if (bounce > 0) {
-			velocity_array[@ 0] = -velocity_array[@ 0] * bounce;
-			alpha[0] = -alpha[0] * bounce;
-		} else {
-			velocity_array[@ 0] = 0;
-			alpha[0] = 0;
-		}
+    if (bounce > 0) {
+        velocity_array[@ 0] = -velocity_array[@ 0] * bounce;
+        alpha[0] = -alpha[0] * bounce;
+    } else {
+        velocity_array[@ 0] = 0;
+        alpha[0] = 0;
+    }
+}
+else {
+    velocity_array[@ 0] += tmpgrav[0]
+    // APPLY ANY ACCELERATIONS (gravity, friction?) to velocity_array[@ 1]
+	
+}
+if (hinput==0){//applies the x friction code. This is a bandaid for now
+	tmpfric[0] = 1;
+	velocity_array[@ 0] = lerp(velocity_array[0],0,tmpfric[0]);
+}
+else{
+	tmpfric[0] = 0;
 }
 x += alpha[0];
-
 
 var collides_y = false;
 var j;
@@ -82,5 +94,10 @@ if (collides_y == true) {
         velocity_array[@ 1] = 0;
         alpha[1] = 0;
     }
+}
+else {
+    velocity_array[@ 1] += tmpgrav[1]
+	//velocity[0]= lerp(velocity[0],0,tmpfrict[0]);
+    // APPLY ANY ACCELERATIONS (gravity, friction?) to velocity_array[@ 1]
 }
 y += alpha[1];
