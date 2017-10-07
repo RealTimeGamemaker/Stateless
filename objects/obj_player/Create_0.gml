@@ -13,9 +13,9 @@ accelerations = [[1,16],[1,0],[1,jmp_speed/5]]
 //Makes the Max velocity list for each state
 max_velocities = [[6,16],[7.5,0],[max_hspeed/6,jmp_speed/6]]
 //Makes the Friction lists for each state
-frictions = [[1,1],[1,1],[1,1]]
+frictions = [[0,0],[0,0],[0,0]]
 //Makes the gravity lists for each state
-gravities = [[0,1],[0,1],[0,1]]
+gravities = [[0,10],[0,10],[0,10]]
 //External Forces Array  starts out with 0 values
 external_forces = ds_list_create();
 pressing = false;

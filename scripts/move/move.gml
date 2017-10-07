@@ -22,13 +22,13 @@ for (i =0; i < ds_list_size(external_forces); i++){//This adds up all the Y valu
 	tmpextern_y += tmpextern[1];
 }
 
-var alpha_x = velocity_array[0] + tmpgrav[0] + tmpfric[1] + tmpextern_x; //adding up all the x forces
+var alpha_x = velocity_array[0] + tmpgrav[0] + tmpfric[0] + tmpextern_x; //adding up all the x forces
 var alpha_y = velocity_array[1] + tmpgrav[1] + tmpfric[1] + tmpextern_y; //adding up all the y forces
 var alpha = [alpha_x,alpha_y] //storing the x and y forces into a single array
 
 
-
-
+show_debug_message("alpha x: "+string(alpha[0]))
+show_debug_message("alpha y: "+string(alpha[1]))
 
 var collidable_type_names = ["obj_collidable_all"];
 collidable_type_names[1] = "obj_collidable_45";
@@ -42,10 +42,10 @@ var collides_x = false;
 var i;
 for (i = 0; i < array_length_1d(collidable_type_names); i++) {
 	if (collidable_type_names[i] != "") {
-		if (place_meeting(x + velocity_array[0], y, asset_get_index(collidable_type_names[i]))) {
+		if (place_meeting(x + alpha[0], y, asset_get_index(collidable_type_names[i]))) {
 			collides_x = true;
-			while (not place_meeting(x + sign(velocity_array[0]), y, asset_get_index(collidable_type_names[i]))) {
-					x += sign(velocity_array[0]);
+			while (not place_meeting(x + sign(alpha[0]), y, asset_get_index(collidable_type_names[i]))) {
+					x += sign(alpha[0]);
 				}
 		}
 	}
@@ -54,29 +54,33 @@ for (i = 0; i < array_length_1d(collidable_type_names); i++) {
 if (collides_x == true) {
 		if (bounce > 0) {
 			velocity_array[@ 0] = -velocity_array[@ 0] * bounce;
+			alpha[0] = -alpha[0] * bounce;
 		} else {
 			velocity_array[@ 0] = 0;
+			alpha[0] = 0;
 		}
 }
-x += velocity_array[0];
+x += alpha[0];
 
 
 var collides_y = false;
 var j;
 for (j = 0; j < array_length_1d(collidable_type_names); j++) {
-	if (place_meeting(x, y + velocity_array[1], asset_get_index(collidable_type_names[j]))) {
+	if (place_meeting(x, y + alpha[1], asset_get_index(collidable_type_names[j]))) {
 		collides_y = true;
-		while (not place_meeting(x, y + sign(velocity_array[1]), asset_get_index(collidable_type_names[j]))) {
-			y += sign(velocity_array[1]);
+		while (not place_meeting(x, y + sign(alpha[1]), asset_get_index(collidable_type_names[j]))) {
+			y += sign(alpha[1]);
 		}
 	}
 }
 
 if (collides_y == true) {
-	if (bounce > 0) {
-		velocity_array[@ 1] = -velocity_array[@ 1] * bounce;
-	} else {
-		velocity_array[@ 1] = 0;
-	}
+    if (bounce > 0) {
+        velocity_array[@ 1] = -velocity_array[@ 1] * bounce;
+        alpha[1] = -alpha[ 1] * bounce;
+    } else {
+        velocity_array[@ 1] = 0;
+        alpha[1] = 0;
+    }
 }
-y += velocity_array[1];
+y += alpha[1];
