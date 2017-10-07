@@ -30,6 +30,10 @@ if keyboard_check(vk_escape){
 	game_end()
 }
 
+if hit_points <= 0 {
+	game_restart();
+}
+
 
 //expiramental code
 //show_debug_message(string(states_changed_count));
