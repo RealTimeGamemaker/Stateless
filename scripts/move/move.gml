@@ -60,6 +60,9 @@ if (collides_x == true) {
 			alpha[0] = 0;
 		}
 }
+else {
+	// APPLY ANY ACCELERATIONS (gravity, friction?) to velocity_array[@ 0]
+}
 x += alpha[0];
 
 
@@ -82,5 +85,9 @@ if (collides_y == true) {
         velocity_array[@ 1] = 0;
         alpha[1] = 0;
     }
+}
+else {
+	velocity_array[@ 1] += tmpgrav[1]
+	// APPLY ANY ACCELERATIONS (gravity, friction?) to velocity_array[@ 1]
 }
 y += alpha[1];
