@@ -5,6 +5,8 @@ var tmpaccel = accelerations[state-1];
 var tmpgrav = gravities[state-1];
 var tmpmaxvel = max_velocities[state-1];
 var tmpfrict = frictions[state-1];
+var tmpinvalidcollides = invalid_collidables[state-1]
+ds_list_add(tmpinvalidcollides,"obj_collidable_invalid"); // adds an invalid collidable to the list for liquid. Used to test
 if sprite_index != asset_get_index("spr_player_liquid") {
 	sprite_index = asset_get_index("spr_player_liquid");
 }

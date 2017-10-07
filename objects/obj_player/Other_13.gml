@@ -7,7 +7,8 @@ var tmpaccel = accelerations[state-1];
 var tmpgrav = gravities[state-1];
 var tmpmaxvel = max_velocities[state-1];
 var tmpfrict = frictions[state-1];
-
+var tmpinvalidcollides = invalid_collidables[state-1] // adds an invalid collidable to the list for gas. Used to test
+ds_list_add(tmpinvalidcollides,"obj_collidable_invalid");
 velocity[1] = -tmpaccel[1];
 
 if hinput!=0{ //Checks to see if there is movement

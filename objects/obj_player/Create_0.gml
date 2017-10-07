@@ -18,9 +18,14 @@ frictions = [[0,0],[0,0],[0,0]]
 gravities = [[0,1],[0,1],[0,1]]
 //External Forces Array  starts out with 0 values
 external_forces = ds_list_create();
+// create the ds_lists of invalid collidables
+solid_invalid_collidables = ds_list_create()
+liquid_invalid_collidables = ds_list_create()
+gas_invalid_collidables = ds_list_create()
+invalid_collidables = [solid_invalid_collidables,liquid_invalid_collidables,gas_invalid_collidables]//puts the invalid collidables for each state in an array
 pressing = false;
 states_changed_count=0;
-
+change_state = true; // variable used for invalid state change
 enum states{
 	debug = 0,
 	solid = 1,

@@ -9,6 +9,7 @@ var velocity_array = argument0;
 var state = argument1;
 var bounce = argument2;
 var hinput = argument3;
+var tmpinvalidcollides = invalid_collidables[state-1];//gets the current list of invalid collidables
 
 var tmpfric = frictions[state-1]// Get the friction x,y array for the associated state
 var tmpgrav = gravities[state-1]// Get the gravity x,y array for the associated state
@@ -27,16 +28,24 @@ var alpha_x = velocity_array[0] + tmpgrav[0] + tmpfric[0] + tmpextern_x; //addin
 var alpha_y = velocity_array[1] + tmpgrav[1] + tmpfric[1] + tmpextern_y; //adding up all the y forces
 var alpha = [alpha_x,alpha_y] //storing the x and y forces into a single array
 
-
-show_debug_message("alpha x: "+string(alpha[0]))
-show_debug_message("alpha y: "+string(alpha[1]))
-
 var collidable_type_names = ["obj_collidable_all"];
 collidable_type_names[1] = "obj_collidable_45";
 
 if (state == states.solid)
 {
 	collidable_type_names[2] = "obj_collidable_solid";
+}
+
+
+
+//checking for invalid collidables
+for (var k = 0; k < ds_list_size(tmpinvalidcollides); k++){//go through the ds_list of all invalid collidables
+	if place_meeting(x, y, asset_get_index(ds_list_find_value(tmpinvalidcollides,k))){
+		change_state = false; // if colliding then stop the play from changing state
+	}
+	else{
+		change_state = true; // else the player acts normally
+	}
 }
 
 var collides_x = false;
@@ -47,7 +56,8 @@ for (i = 0; i < array_length_1d(collidable_type_names); i++) {
 			collides_x = true;
 			while (not place_meeting(x + sign(alpha[0]), y, asset_get_index(collidable_type_names[i]))) {
 					x += sign(alpha[0]);
-				}
+			}
+		
 		}
 	}
 }
