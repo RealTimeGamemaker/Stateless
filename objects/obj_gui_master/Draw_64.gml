@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description All that lovely draw code
 // You can write your code in this editor
 
 // gets width of the current view, to be used to always have the health HUD in the same part of
@@ -63,7 +63,11 @@ if (popup_countdown > 0)
 	view_height = view_get_hport(view_current);
 	view_center = view_width / 2;
 	view_middle = view_height / 2;
-	
+
+	draw_set_color(c_yellow);
+	draw_set_alpha(0.5);
+	draw_rectangle(0, view_middle + 125, view_width, view_middle+175, false) // false means filled
+
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	draw_set_font(font_popup_message);
