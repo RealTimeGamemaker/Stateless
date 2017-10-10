@@ -118,3 +118,4 @@ else {
     // APPLY ANY ACCELERATIONS (gravity, friction?) to velocity_array[@ 1]
 }
 y += alpha[1];
+ds_list_clear(external_forces)
