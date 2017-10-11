@@ -1,4 +1,4 @@
-if(state == 1 and player_cant_take_actions=false)
+if(obj_player.state == 1 and obj_player.player_cant_take_actions=false)
 {
-	hit_points = 0;
+	obj_player.hit_points = 0;
 }
