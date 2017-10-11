@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "197c22b3-815c-452b-904a-7008b48bd942",
+            "Value": {
+                "id": "5a13c939-76f9-4823-8653-f63ac47686f1",
+                "resourcePath": "sprites\\spr_dev_tileset_backup\\spr_dev_tileset_backup.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1a00afdd-a408-4931-a210-006618983409",
             "Value": {
                 "id": "ff4623cc-7f09-437f-bff6-76573542700b",
