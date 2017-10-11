@@ -11,7 +11,7 @@ if (in_main_menu == false)
 {
 	// sets sprite indexes to 1 (empty heart) for hit point checks
 	// only does if not paused because the player object is deactivated on pause
-	if (game_is_paused == false)
+	if ((game_is_paused == false) and (player_beat_level == false))
 	{
 		heart_1 = (obj_player.hit_points < 4);
 		heart_2 = (obj_player.hit_points < 3);
@@ -21,17 +21,24 @@ if (in_main_menu == false)
 	}
 
 	// draw the heart sprites
-	draw_sprite(spr_heart, heart_1, view_width-100, 50);
-	draw_sprite(spr_heart, heart_2, view_width-75, 50);
-	draw_sprite(spr_heart, heart_3, view_width-50, 50);
-	draw_sprite(spr_heart, heart_4, view_width-25, 50);
+	if (player_beat_level == false)
+	{
+		draw_sprite(spr_heart, heart_1, view_width-100, 50);
+		draw_sprite(spr_heart, heart_2, view_width-75, 50);
+		draw_sprite(spr_heart, heart_3, view_width-50, 50);
+		draw_sprite(spr_heart, heart_4, view_width-25, 50);
+	}
 
 	draw_set_font(font_par);
 	draw_set_halign(fa_right);
 
 	draw_set_color(c_white);
-	draw_text_with_shadow(view_width-5, 10, par_message, -2, 2)
 
+	if (player_beat_level == false)
+	{
+		draw_text_with_shadow(view_width-5, 10, par_message, -2, 2);
+	}
+	
 	// clock writing code stuff
 	if (hours == 0)
 	{
@@ -55,7 +62,11 @@ if (in_main_menu == false)
 	}
 
 	draw_set_color(c_white);
-	draw_text_with_shadow((view_width / 2), 10, time_message, 2, 2)
+
+	if (player_beat_level == false)
+	{
+		draw_text_with_shadow((view_width / 2), 10, time_message, 2, 2);
+	}
 
 	if (popup_countdown > 0)
 	{
@@ -181,4 +192,40 @@ if (player_is_dead == true)
 	draw_rectangle(view_center-200, 384+(death_menu_selection*50), view_center+200, 434+(death_menu_selection*50), 20);
 	draw_set_alpha(1);
 	draw_set_halign(fa_left);
+}
+
+if (player_beat_level = true)
+{
+	draw_set_color(c_black);
+	draw_set_alpha(level_fade_out_alpha);
+	draw_rectangle(0, 0, view_width, view_height, 0);
+	draw_set_alpha(1);
+	
+	draw_set_halign(fa_center);
+	draw_set_font(font_heading);
+	draw_set_color(c_white);
+	draw_text_with_shadow(view_center, 280, "Level Complete!", 4, 4);
+	
+	if (display_time_timer <= 0)
+	{
+		draw_set_color(c_yellow);
+		draw_set_font(font_popup_message);
+		draw_set_halign(fa_left);
+		draw_text_with_shadow(view_center-280, 400, "Time Elapsed     " + time_message, 2, 2);
+	}
+
+	if (display_par_timer <= 0)
+	{
+		draw_set_color(c_yellow);
+		draw_set_font(font_popup_message);
+		draw_set_halign(fa_left);
+		draw_text_with_shadow(view_center-280, 475, par_message, 2, 2);
+	}
+	
+
+	
+	draw_set_halign(fa_center);	
+	draw_set_font(font_popup_message);
+	draw_set_color(c_purple); // starring Whoopi Goldberg
+	draw_text_with_shadow(view_center, 600, "Press Enter To Continue", 2, 2);
 }

@@ -71,3 +71,8 @@ if (player_is_dead == true)
 			break;
 	}
 }
+
+if (player_beat_level == true)
+{
+	room_goto(next_room)
+}

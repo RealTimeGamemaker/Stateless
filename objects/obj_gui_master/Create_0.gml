@@ -36,5 +36,13 @@ just_left_option_menu = false;
 player_is_dead = false;
 death_menu_selection = 0;
 
+// beating a level variables
+player_beat_level = false;
+next_room = rm_start;
+level_fade_out_alpha = 0;
+display_time_timer = 2.0;
+display_par_timer = 3.0;
+
+
 // Run the room par setting event
 event_user(1)
