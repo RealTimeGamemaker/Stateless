@@ -85,11 +85,15 @@ if (popup_countdown > 0)
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 	
-	if (temp_timer % room_speed == 0)
+	if ((temp_timer % room_speed == 0) and (game_is_paused = false))
 	{
 		popup_countdown--;
 	}
-	temp_timer++;
+	
+	if (game_is_paused == false)
+	{
+		temp_timer++;
+	}
 }
 
 if (game_is_paused == true)

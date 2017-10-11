@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 time++;
-if(time % room_speed == 0)
+if((time % room_speed == 0) and (game_is_paused == false))
 {
 	real_seconds++;
 
