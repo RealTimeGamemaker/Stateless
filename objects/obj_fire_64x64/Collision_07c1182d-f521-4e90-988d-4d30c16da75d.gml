@@ -4,9 +4,10 @@ if(alarm[0] < 0)
 	hit_points--;
 	alarm[0] = room_speed * 5;
 	//set alarm 0
-	if(state > 1)
+	if(obj_player.state < 3)
 	{
-		state -= 1;
+		obj_player.state += 1;
 	}
 	//state change
 }
+
