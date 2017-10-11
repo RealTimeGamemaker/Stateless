@@ -1,7 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Timer Update & Popup Setup
+
 time++;
-if((time % room_speed == 0) and (game_is_paused == false))
+if((time % room_speed == 0) and (game_is_paused == false) and (in_main_menu == false))
 {
 	real_seconds++;
 

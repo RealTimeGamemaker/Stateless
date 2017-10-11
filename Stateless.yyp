@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "433172e1-035d-40df-9adb-7c00429a8127",
+            "Value": {
+                "id": "a0f25ab2-ad01-4477-9754-e435eb42cb95",
+                "resourcePath": "fonts\\font_heading\\font_heading.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "449aa1d8-a404-4fe8-a967-291b55d4b5b7",
             "Value": {
                 "id": "7c2e3e07-1534-43d1-90de-a5ee14ebe888",
@@ -415,6 +423,14 @@
             }
         },
         {
+            "Key": "b40e4b6c-3d93-461d-83f2-efc263a03c08",
+            "Value": {
+                "id": "c541c0ca-fb3b-405b-a00d-ae096a318097",
+                "resourcePath": "scripts\\draw_text_with_shadow\\draw_text_with_shadow.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b5ea0b2a-8d0e-4323-abea-73c99898feef",
             "Value": {
                 "id": "1b82ba2f-a7fd-4c3c-a0b0-43db7f948176",
@@ -608,7 +624,8 @@
         }
     ],
     "script_order": [
-        "c6f3620e-411c-4d7f-b7db-58d5344dfb34"
+        "c6f3620e-411c-4d7f-b7db-58d5344dfb34",
+        "b40e4b6c-3d93-461d-83f2-efc263a03c08"
     ],
     "tutorial": ""
 }
