@@ -15,7 +15,10 @@ if hinput!=0{ //Checks to see if there is movement
 	velocity[0]+=hinput*tmpaccel[0]; 
 	velocity[0] = clamp(velocity[0], -tmpmaxvel[0], tmpmaxvel[0] );
 }
-move(velocity,state,0,hinput, rotation);
+if(player_cant_take_actions=false)
+{
+	move(velocity,state,0,hinput, rotation);
+}
 
 
 

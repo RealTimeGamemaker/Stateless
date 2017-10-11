@@ -53,3 +53,4 @@ enum actions{
 }
 action=actions.standing;
 hit_points = 4;
+player_cant_take_actions = false;
