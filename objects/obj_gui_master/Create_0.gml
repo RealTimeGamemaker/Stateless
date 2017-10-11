@@ -32,5 +32,9 @@ in_option_menu = false;
 option_menu_selection = 0;
 just_left_option_menu = false;
 
+// death menu variables
+player_is_dead = false;
+death_menu_selection = 0;
+
 // Run the room par setting event
 event_user(1)

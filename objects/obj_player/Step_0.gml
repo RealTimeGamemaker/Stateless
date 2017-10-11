@@ -31,7 +31,8 @@ if keyboard_check(vk_f12){
 }
 
 if hit_points <= 0 {
-	game_restart();
+	obj_gui_master.player_is_dead = true;
+	player_cant_take_actions = true;
 }
 
 

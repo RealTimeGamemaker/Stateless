@@ -1,4 +1,4 @@
-if(alarm[0] < 0)
+if(alarm[0] < 0 and player_cant_take_actions=false)
 // waits until alarm counts down
 {
 	hit_points--;

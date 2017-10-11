@@ -71,5 +71,7 @@ if liquid_state == liquid_states.idle {
 
 
 
-
-move(velocity,state,0,hinput, rotation);
+if(player_cant_take_actions=false)
+{
+	move(velocity,state,0,hinput, rotation);
+}

@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "59a4ada8-9d98-4c3e-9202-3722f6f1a60b",
+            "Value": {
+                "id": "a5d7aec2-26c3-4d42-8b9f-289ce54ab154",
+                "resourcePath": "objects\\obj_trigger_endlevel\\obj_trigger_endlevel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5e61a1ce-a2bc-4c1b-aaf3-b092d64e8269",
             "Value": {
                 "id": "3c0433b4-0fcb-49b7-a41e-60d55f70d1a4",

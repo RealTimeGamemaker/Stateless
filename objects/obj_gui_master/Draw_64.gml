@@ -3,6 +3,9 @@
 // gets width of the current view, to be used to always have the health HUD in the same part of
 // the upper right hand corner
 view_width = view_get_wport(view_current);
+view_height = view_get_hport(view_current);
+view_center = view_width / 2;
+view_middle = view_height / 2;
 
 if (in_main_menu == false)
 {
@@ -56,11 +59,6 @@ if (in_main_menu == false)
 
 	if (popup_countdown > 0)
 	{
-		view_width = view_get_wport(view_current);
-		view_height = view_get_hport(view_current);
-		view_center = view_width / 2;
-		view_middle = view_height / 2;
-
 		draw_set_color(c_yellow);
 		draw_set_alpha(0.5);
 		draw_rectangle(0, view_middle + 125, view_width, view_middle+175, false) // false means filled
@@ -89,9 +87,6 @@ if (in_main_menu == false)
 
 	if ((game_is_paused == true) and (in_option_menu == false))
 	{
-		view_width = view_get_wport(view_current);
-		view_height = view_get_hport(view_current);
-		view_center = view_width / 2;
 		draw_set_color(c_black);
 		draw_set_alpha(0.8);
 		draw_rectangle(0, 0, view_width, view_height, 0);
@@ -120,10 +115,6 @@ if (in_main_menu == false)
 
 if((in_main_menu == true) and (in_option_menu = false))
 {
-	view_width = view_get_wport(view_current);
-	view_height = view_get_hport(view_current);
-	view_center = view_width / 2;
-
 	draw_set_halign(fa_center);
 	draw_set_font(font_heading);
 	draw_set_color(c_white);
@@ -143,10 +134,6 @@ if((in_main_menu == true) and (in_option_menu = false))
 
 if (in_option_menu == true)
 {
-	view_width = view_get_wport(view_current);
-	view_height = view_get_hport(view_current);
-	view_center = view_width / 2;
-
 	if(game_is_paused == true)
 	{
 		draw_set_color(c_black);
@@ -164,15 +151,34 @@ if (in_option_menu == true)
 	draw_set_color(c_purple); // starring Whoopi Goldberg
 	draw_text_with_shadow(view_center, 200, "Go Back", 2, 2);
 	
-	if (in_main_menu == true)
-	{
-		draw_set_color(c_black);
-	}
-	else
-	{
-		draw_set_color(c_white);
-	}
+
+	draw_set_color(c_white);
+
 	draw_rectangle(view_center-200, 200+(option_menu_selection*50), view_center+200,250+(option_menu_selection*50), 20);
 	draw_set_alpha(1);
 	draw_set_halign(fa_left);	
+}
+
+if (player_is_dead == true)
+{
+	draw_set_color(c_black);
+	draw_set_alpha(0.8);
+	draw_rectangle(0, 0, view_width, view_height, 0);
+	draw_set_alpha(1);
+
+	draw_set_halign(fa_center);
+	draw_set_font(font_heading);
+	draw_set_color(c_white);
+	draw_text_with_shadow(view_center, 200, "Oh No! You Died!", 4, 4);
+	
+	draw_set_font(font_popup_message);
+	draw_set_color(c_purple); // starring Whoopi Goldberg
+	draw_text_with_shadow(view_center, 384, "Restart Level", 2, 2);
+	draw_text_with_shadow(view_center, 434, "Return to Main Menu", 2, 2);
+	draw_text_with_shadow(view_center, 484, "Quit Game", 2, 2);
+	
+	draw_set_color(c_white);
+	draw_rectangle(view_center-200, 384+(death_menu_selection*50), view_center+200, 434+(death_menu_selection*50), 20);
+	draw_set_alpha(1);
+	draw_set_halign(fa_left);
 }

@@ -53,3 +53,21 @@ if (just_left_option_menu == true)
 {
 	just_left_option_menu = false;
 }
+
+if (player_is_dead == true)
+{
+	switch (death_menu_selection)
+	{
+		case 0:						// "Restart Level"
+			player_is_dead = false;
+			obj_player.player_cant_take_actions = false;
+			room_restart();
+			break;
+		case 1:
+			game_restart();			// "Return to Main Menu"
+			break;
+		case 2:
+			game_end();				// "Quit Game"
+			break;
+	}
+}

@@ -21,3 +21,14 @@ if ((in_main_menu == true) and(in_option_menu == false))
 		main_menu_selection = 2;	
 	}
 }
+
+if (player_is_dead == true)
+{
+	death_menu_selection--;
+
+	// loop around to the bottom of the menu
+	if (death_menu_selection == -1)
+	{
+		death_menu_selection = 2;	
+	}
+}
