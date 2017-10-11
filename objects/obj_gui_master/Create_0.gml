@@ -19,3 +19,7 @@ popup_message = "";
 popup_length = 5;
 popup_countdown = 0;
 temp_timer = 0;
+game_is_paused = false;
+
+// Run the room par setting event
+event_user(1)

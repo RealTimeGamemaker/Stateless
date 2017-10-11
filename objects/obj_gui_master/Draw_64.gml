@@ -5,11 +5,16 @@
 // the upper right hand corner
 view_width = view_get_wport(view_current);
 
-// sets sprite indexes to 1 (empty battery) for hit point checks
-heart_1 = (obj_player.hit_points < 4);
-heart_2 = (obj_player.hit_points < 3);
-heart_3 = (obj_player.hit_points < 2);
-heart_4 = (obj_player.hit_points < 1);
+// sets sprite indexes to 1 (empty heart) for hit point checks
+// only does if not paused because the player object is deactivated on pause
+if (game_is_paused == false)
+{
+	heart_1 = (obj_player.hit_points < 4);
+	heart_2 = (obj_player.hit_points < 3);
+	heart_3 = (obj_player.hit_points < 2);
+	heart_4 = (obj_player.hit_points < 1);
+	par_message = "Par: " + string(obj_player.states_changed_count) + " / " + string(room_par);
+}
 
 // draw the heart sprites
 draw_sprite(spr_heart, heart_1, view_width-100, 50);
@@ -19,7 +24,6 @@ draw_sprite(spr_heart, heart_4, view_width-25, 50);
 
 draw_set_font(font_par);
 draw_set_halign(fa_right);
-par_message = "Par: " + string(obj_player.states_changed_count) + " / " + string(room_par);
 
 // the black text is the drop shadow
 draw_set_color(c_black);
@@ -86,4 +90,13 @@ if (popup_countdown > 0)
 		popup_countdown--;
 	}
 	temp_timer++;
+}
+
+if (game_is_paused == true)
+{
+	view_width = view_get_wport(view_current);
+	view_height = view_get_hport(view_current);
+	draw_set_color(c_black);
+	draw_set_alpha(0.6);
+	draw_rectangle(0, 0, view_width, view_height, 0);
 }
