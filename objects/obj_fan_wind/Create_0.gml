@@ -1,3 +1,3 @@
 /// @description Wind Creation
 
-velocity = -1 * room_speed
+velocity = -.25 * room_speed

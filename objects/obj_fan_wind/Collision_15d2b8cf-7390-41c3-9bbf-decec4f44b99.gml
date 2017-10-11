@@ -1,3 +1,3 @@
 /// @description Scoot
 
-//ds_list_add(other.externalforces,[20,0])
+ds_list_add(other.external_forces,[-.5,0])

@@ -8,39 +8,25 @@ h_accel = 1
 player_frict = 1
 rotation_degrees = 0;
 flip = 1; // which way the player is facing
-//Makes the acceleration list for each state, index 0 is debug
-accelerations = ds_list_create()
-var solid_accelerations = [h_accel,jmp_speed];
-var liquid_accelerations = [h_accel, 0];
-var gas_accelerations = [h_accel,jmp_speed/5];
-ds_list_add(accelerations, 0);
-ds_list_add(accelerations, solid_accelerations);
-ds_list_add(accelerations, liquid_accelerations);
-ds_list_add(accelerations, gas_accelerations);
-//Makes the Max velocity list for each state, index 0 is debug, 1 solid, ect.
-max_velocities = ds_list_create();
-var solid_max_velocity = [6,16];
-var liquid_max_velocity = [7.5,0];
-var gas_max_velocity = [max_hspeed/6,jmp_speed/5];
-ds_list_add(max_velocities,0);
-ds_list_add(max_velocities,solid_max_velocity);
-ds_list_add(max_velocities,liquid_max_velocity);
-ds_list_add(max_velocities,gas_max_velocity);
-//Makes the Friction lists for each state, index 0 is debug, 1 solid, ect.
-frictions = ds_list_create();
-ds_list_add(frictions, 0);
-ds_list_add(frictions, 1);
-ds_list_add(frictions, 1);
-ds_list_add(frictions, 1);
-//Makes the gravity lists for each state, index 0 is debug, 1 solid, ect.
-gravities = ds_list_create();
-ds_list_add(gravities, 0);
-ds_list_add(gravities, 1);
-ds_list_add(gravities, 1);
-ds_list_add(gravities, 1);
+//Makes the acceleration list for each state
+accelerations = [[1,16],[1,0],[1,jmp_speed/5]]
+//Makes the Max velocity list for each state
+max_velocities = [[6,16],[7.5,0],[max_hspeed/6,jmp_speed/6]]
+//Makes the Friction lists for each state
+frictions = [[0,0],[0,0],[0,0]]
+//Makes the gravity lists for each state
+gravities = [[0,1],[0,1],[0,1]]
+//External Forces Array  starts out with 0 values
+external_forces = ds_list_create();
+// create the ds_lists of invalid collidables
+solid_invalid_collidables = ds_list_create()
+liquid_invalid_collidables = ds_list_create()
+gas_invalid_collidables = ds_list_create()
+invalid_collidables = [solid_invalid_collidables,liquid_invalid_collidables,gas_invalid_collidables]//puts the invalid collidables for each state in an array
 pressing = false;
 states_changed_count=0;
-
+rotation = 0;
+change_state = true; // variable used for invalid state change
 enum states{
 	debug = 0,
 	solid = 1,
@@ -67,3 +53,4 @@ enum actions{
 }
 action=actions.standing;
 hit_points = 4;
+player_cant_take_actions = false;
