@@ -10,4 +10,7 @@ if(alarm[0] < 0 and obj_player.player_cant_take_actions=false)
 	}
 	//state change
 }
-
+if(obj_player.state = 3)
+{
+	ds_list_add(obj_player.external_forces,[0,-2]);
+}
