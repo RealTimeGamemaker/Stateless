@@ -1,4 +1,4 @@
 /// @description Scoot
 
-//other.velocity = .25 * room_speed
-// reduces speed of target
+ds_list_add(other.external_forces,[-2.5,0])
+// feel free to change this value  ^^^ if you feel it necessary

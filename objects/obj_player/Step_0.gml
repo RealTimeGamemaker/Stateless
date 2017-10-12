@@ -3,6 +3,8 @@
 //This script handles all player movement as well as user input
 event_user(state);
 
+clamp(hit_points, 0, 4)
+
 //switching states code
 
 
@@ -24,8 +26,13 @@ else if keyboard_check(ord("L")) && state!=states.gas {
 
 
 
-if keyboard_check(vk_escape){
+if keyboard_check(vk_f12){
 	game_end()
+}
+
+if hit_points <= 0 {
+	obj_gui_master.player_is_dead = true;
+	player_cant_take_actions = true;
 }
 
 
