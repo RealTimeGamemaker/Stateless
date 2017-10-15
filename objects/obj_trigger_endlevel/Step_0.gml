@@ -1,6 +1,6 @@
 /// @description Collision code
 // You can write your code in this editor
-if (place_meeting(x, y, obj_player) == true)
+if (place_meeting(x, y, obj_player) == true and open_door == true)
 {
 	if (can_be_triggered == true)
 	{
