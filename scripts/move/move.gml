@@ -32,14 +32,14 @@ if (state == states.solid)
 
 // ################# PRE COLLISION ###################
 
-//var o = instance_place(x + alpha[0], y, asset_get_index(collidable_type_names[i]))
+//var o = instance_place(x + alpha[0], y + alpha[1], asset_get_index(collidable_type_names[i]))
 //var normal = 1;
 //if (o.y - (o.sprite_height / 2) < y and y < o.y + (o.sprite_height / 2) and
 //	o.x - (o.sprite_width / 2) < x and x < o.x) {
 //	normal = -1;	
 //}
 			
-//var o = instance_place(x, y + alpha[1], asset_get_index(collidable_type_names[j]))
+//var o = instance_place(x, y , asset_get_index(collidable_type_names[j]))
 //var normal = 1;
 //if (o.y + (o.sprite_height / 2) < y and y < o.y + o.sprite_height and
 //	o.x - (o.sprite_width / 2) < x and x < o.x + (o.sprite_width / 2)) {
