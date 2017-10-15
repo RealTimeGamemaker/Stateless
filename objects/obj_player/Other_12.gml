@@ -1,12 +1,9 @@
 /// @description Liquid State
 
+// Get the movement. If niether or both keys are pressed the result is 0
 var hinput = keyboard_check(ord("D")) - keyboard_check(ord("A"))
-var tmpaccel = accelerations[state-1];
-var tmpgrav = gravities[state-1];
-var tmpmaxvel = max_velocities[state-1];
-var tmpfrict = frictions[state-1];
-var tmpinvalidcollides = invalid_collidables[state-1]
-ds_list_add(tmpinvalidcollides,"obj_collidable_invalid"); // adds an invalid collidable to the list for liquid. Used to test
+
+// Change the sprite index
 if sprite_index != asset_get_index("spr_player_liquid") {
 	sprite_index = asset_get_index("spr_player_liquid");
 }
@@ -41,26 +38,26 @@ else { // if we are moving vertically (it must be down since liquid can't jump)
 
 // ---------- STATE SPECIFIC CODE -----------
 if liquid_state == liquid_states.idle {
-	if image_index > 150 {
+	if image_index > 150 { // Loop Animation
 		image_index = 0;
 	}
 } else if liquid_state == liquid_states.moving {
-	if image_index > 165 or image_index < 151 {
+	if image_index > 165 or image_index < 151 { // Loop Animation
 		image_index = 151;
 	}
 	
 	if hinput != 0 { // if we are going to continue moving horizontally
 		flip = hinput; // make sure we are facing the right way
-		velocity[0] += hinput * tmpaccel[0];
-		velocity[0] = clamp(velocity[0], -tmpmaxvel[0], tmpmaxvel[0] );
+		velocity[0] += hinput * accelerations[state - 1, 0];
+		velocity[0] = clamp(velocity[0], -max_velocities[state - 1, 0], max_velocities[state - 1, 0]);
 	}
 } else if liquid_state == liquid_states.falling {
-	if image_index > 180 or image_index < 166 {
+	if image_index > 180 or image_index < 166 { // Loop Animation
 		image_index = 166;
 	}
 	velocity[0] = 0;
 } else if liquid_state == liquid_states.landing {
-	if image_index < 181 {
+	if image_index < 181 { // Loop Animation
 		image_index = 181;
 	}
 } else if liquid_state == liquid_states.top_slope {
@@ -70,8 +67,7 @@ if liquid_state == liquid_states.idle {
 }
 
 
-
-if(player_cant_take_actions=false)
+if(player_cant_take_actions == false)
 {
-	move(velocity,state,0,hinput, rotation);
+	move(hinput);
 }
