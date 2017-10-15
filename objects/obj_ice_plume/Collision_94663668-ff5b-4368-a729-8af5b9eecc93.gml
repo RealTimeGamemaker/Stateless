@@ -1,4 +1,4 @@
-if(alarm[0] < 0 and obj_player.player_cant_take_actions==false)
+if(alarm[0] < 0 and obj_player.player_cant_take_actions==false and is_on ==true)
 // waits until alarm counts down
 {
 	obj_player.hit_points--;

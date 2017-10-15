@@ -24,7 +24,7 @@ else if keyboard_check(ord("L")) && state!=states.gas {
 	states_changed_count++;
 }*/
 
-
+pressing = false;
 
 if keyboard_check(vk_f12){
 	game_end()
