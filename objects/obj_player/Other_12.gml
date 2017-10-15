@@ -13,9 +13,25 @@ if sprite_index != asset_get_index("spr_player_liquid") {
 // Moving: 151-165
 // Falling: 166-180
 // Landing: 181-185
+// Bot Slope: 186-194
 
 // ------- ANIMATION STATE SWITCHING ---------
-if liquid_state == liquid_states.landing { // if we are landing, we don't want to be doing anything else
+if liquid_state == liquid_states.top_slope {
+
+}
+else if liquid_state == liquid_states.bot_slope {
+	if image_index >= 190 {
+		var o = instance_place(x, y, obj_slope_transition);
+		show_debug_message(o)
+		x = o.end_origin_x;
+		y = o.end_origin_y;
+		liquid_state = liquid_states.idle;
+	}
+}
+else if image_angle != 0 { // if we are on any slope
+	liquid_state = liquid_states.moving;
+} 
+else if liquid_state == liquid_states.landing { // if we are landing, we don't want to be doing anything else
 	if image_index >= 184 { // if we are at the end of the landing animation
 		liquid_state = liquid_states.idle;
 	}
@@ -57,13 +73,19 @@ if liquid_state == liquid_states.idle {
 	}
 	velocity[0] = 0;
 } else if liquid_state == liquid_states.landing {
-	if image_index < 181 { // Loop Animation
+	if image_index < 181 or image_index > 185 { // Loop Animation
 		image_index = 181;
 	}
 } else if liquid_state == liquid_states.top_slope {
-	// Code to handle top slope state
+	if image_index < 189 or image_index > 191 { // Loop Animation
+		image_index = 189;
+	}
 } else if liquid_state == liquid_states.bot_slope {
-	// Code to handle bottom slope state
+	if image_index < 186 or image_index > 194 { // Loop Animation
+		image_index = 186;
+	}
+	velocity[0] = 0;
+	velocity[1] = 0;
 }
 
 

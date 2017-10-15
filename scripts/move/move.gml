@@ -18,8 +18,8 @@ var alpha_y = velocity[1] + gravities[state-1, 1] + external_y; //adding up all 
 // took friction out (+ frictions[state-1, 1]) because it was causing problems
 
 var alpha;
-alpha[0] = (alpha_x * cos(degtorad(rotation))) - (alpha_y * sin(degtorad(rotation)))
-alpha[1] = (alpha_x * sin(degtorad(rotation))) + (alpha_y * cos(degtorad(rotation)))
+alpha[0] = (alpha_x * cos(degtorad(image_angle))) - (alpha_y * sin(degtorad(image_angle)))
+alpha[1] = (alpha_x * sin(degtorad(image_angle))) + (alpha_y * cos(degtorad(image_angle)))
 
 
 var collidable_type_names = ["obj_collidable_all", "obj_collidable_45"];
