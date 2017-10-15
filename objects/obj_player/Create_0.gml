@@ -41,7 +41,6 @@ gravities[2, 1] = 1;
 
 external_forces = ds_list_create();
 
-// STUFF THAT NEEDS TO LEAVE
 pressing = false;
 
 

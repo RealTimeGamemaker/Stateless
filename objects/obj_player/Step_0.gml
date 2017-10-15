@@ -24,11 +24,17 @@ else if keyboard_check(ord("L")) && state!=states.gas {
 	states_changed_count++;
 }*/
 
-pressing = false;
 
 if keyboard_check(vk_f12){
 	game_end()
 }
+
+if keyboard_check_pressed(ord("I"))
+{
+	event_user(4);
+	alarm[0] = room_speed * .01;
+}
+
 
 if hit_points <= 0 {
 	obj_gui_master.player_is_dead = true;
