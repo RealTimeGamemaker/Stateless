@@ -18,8 +18,8 @@ var alpha_y = velocity[1] + gravities[state-1, 1] + external_y; //adding up all 
 // took friction out (+ frictions[state-1, 1]) because it was causing problems
 
 var alpha;
-alpha[0] = (alpha_x * cos(degtorad(rotation))) - (alpha_y * sin(degtorad(rotation)))
-alpha[1] = (alpha_x * sin(degtorad(rotation))) + (alpha_y * cos(degtorad(rotation)))
+alpha[0] = (alpha_x * cos(degtorad(image_angle))) - (alpha_y * sin(degtorad(image_angle)))
+alpha[1] = (alpha_x * sin(degtorad(image_angle))) + (alpha_y * cos(degtorad(image_angle)))
 
 
 var collidable_type_names = ["obj_collidable_all", "obj_collidable_45"];
@@ -30,21 +30,27 @@ if (state == states.solid)
 
 
 
-// ################# PRE COLLISION ###################
+// ################# STATE CHANGE COLLISION ###################
 
-//var o = instance_place(x + alpha[0], y + alpha[1], asset_get_index(collidable_type_names[i]))
-//var normal = 1;
-//if (o.y - (o.sprite_height / 2) < y and y < o.y + (o.sprite_height / 2) and
-//	o.x - (o.sprite_width / 2) < x and x < o.x) {
-//	normal = -1;	
-//}
-			
-//var o = instance_place(x, y , asset_get_index(collidable_type_names[j]))
-//var normal = 1;
-//if (o.y + (o.sprite_height / 2) < y and y < o.y + o.sprite_height and
-//	o.x - (o.sprite_width / 2) < x and x < o.x + (o.sprite_width / 2)) {
-//	normal = -1;	
-//}
+for (var i = 0; i < array_length_1d(collidable_type_names); i++) { // for every collidable that this state can collide with
+	while (place_meeting(x, y, asset_get_index(collidable_type_names[i]))) { // if we collide with it after we move
+		var o = instance_place(x, y, asset_get_index(collidable_type_names[i]))
+		
+		var normal_x = x - (o.x + (o.sprite_width / 2))
+		var normal_y = (y - (o.sprite_height / 2)) - (o.y + (o.sprite_height / 2))
+		var magnitude = sqrt(sqr(normal_x) + sqr(normal_y))
+		normal_x /= o.sprite_width;
+		normal_y /= o.sprite_height;
+		
+		while (place_meeting(x, y, o)) {
+			if (abs(normal_x) > abs(normal_y)) {
+				x += normal_x; // move slowly until we are 1 pixel away from touching it
+			} else {
+				y += normal_y; // move slowly until we are 1 pixel away from touching it
+			}
+		}
+	}
+}
 
 
 
@@ -54,7 +60,7 @@ var collides_x = false;
 for (var i = 0; i < array_length_1d(collidable_type_names); i++) { // for every collidable that this state can collide with
 	if (place_meeting(x + alpha[0], y, asset_get_index(collidable_type_names[i]))) { // if we collide with it after we move
 		while (not place_meeting(x + sign(alpha[0]), y, asset_get_index(collidable_type_names[i]))) {
-				x += sign(alpha[0]); // move slowly until we are 1 pixel away from touching it
+			x += sign(alpha[0]); // move slowly until we are 1 pixel away from touching it
 		}
 		
 		collides_x = true;

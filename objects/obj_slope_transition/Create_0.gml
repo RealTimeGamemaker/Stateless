@@ -6,3 +6,7 @@ enum slope_sides{
 }
 
 slope_side = slope_sides.top;
+transition_origin_x = 0;
+transition_origin_y = 0;
+end_origin_x = 0;
+end_origin_y = 0;

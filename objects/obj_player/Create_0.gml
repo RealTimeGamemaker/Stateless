@@ -2,10 +2,10 @@
 
 flip = 1; // which way the player is facing
 states_changed_count = 0;
-rotation = 0;
 change_state = true; // variable used for invalid state change
 hit_points = 4;
 player_cant_take_actions = false;
+pressing = false;
 
 // Movement Variables
 velocity[0] = 0;
@@ -40,8 +40,6 @@ gravities[2, 0] = 0;
 gravities[2, 1] = 1;
 
 external_forces = ds_list_create();
-
-pressing = false;
 
 
 enum states{
