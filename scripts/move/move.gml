@@ -41,8 +41,6 @@ for (var i = 0; i < array_length_1d(collidable_type_names); i++) { // for every 
 		var magnitude = sqrt(sqr(normal_x) + sqr(normal_y))
 		normal_x /= o.sprite_width;
 		normal_y /= o.sprite_height;
-		show_debug_message("X:  " + string(normal_x));
-		show_debug_message("Y:  " + string(normal_y));
 		
 		while (place_meeting(x, y, o)) {
 			if (abs(normal_x) > abs(normal_y)) {
