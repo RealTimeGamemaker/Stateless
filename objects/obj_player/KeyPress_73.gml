@@ -3,5 +3,4 @@
 if(!pressing and state == states.solid and player_cant_take_actions == false)
 {
 	pressing = true;
-	alarm[0] = room_speed * .1;
 }

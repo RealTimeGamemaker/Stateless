@@ -4,3 +4,4 @@ image_speed = 0;
 pressed_state = false;
 press_resets = false;
 target = noone;
+cooldown = false;

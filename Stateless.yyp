@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "94a3640d-a484-4096-901b-fe25fc02e970",
+            "Value": {
+                "id": "94d5b026-ca16-472a-a123-238633ff8d27",
+                "resourcePath": "objects\\obj_slope_transition\\obj_slope_transition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9878b1d8-11dc-4ea2-9227-48cf56729b1b",
             "Value": {
                 "id": "e7849112-15d4-4cc0-b3dc-8a3ae9e4dc14",
@@ -596,6 +604,14 @@
                 "id": "f6a37ae0-16db-4168-af69-17aad86d2ea3",
                 "resourcePath": "views\\dcc76794-8f87-47ac-8bff-bf926c7d9e29.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ddaf031b-8014-4efe-8eb5-561e84ec652d",
+            "Value": {
+                "id": "b953ddf2-b1c6-4da2-b3f3-8f44652c33c9",
+                "resourcePath": "sprites\\spr_slope_transition\\spr_slope_transition.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
