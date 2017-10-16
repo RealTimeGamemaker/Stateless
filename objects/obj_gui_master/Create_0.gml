@@ -43,6 +43,9 @@ level_fade_out_alpha = 0;
 display_time_timer = 2.0;
 display_par_timer = 3.0;
 
+// Pausing popup message variables
+display_pausing_popup = false;
+
 
 // Run the room par setting event
 event_user(1)

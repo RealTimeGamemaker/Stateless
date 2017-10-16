@@ -76,3 +76,9 @@ if (player_beat_level == true)
 {
 	room_goto(next_room)
 }
+
+if (display_pausing_popup == true)
+{
+	obj_player.player_cant_take_actions = false;
+	display_pausing_popup = false;
+}
