@@ -2,7 +2,8 @@
 
 time++;
 if((time % room_speed == 0) and (game_is_paused == false) 
-and (in_main_menu == false) and player_beat_level == false)
+and (in_main_menu == false) and (player_beat_level == false)
+and (display_pausing_popup == false))
 {
 	real_seconds++;
 

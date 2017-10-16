@@ -1,0 +1,2 @@
+is_pausing = true;
+popup_message = "Why hello, little one.  It must be very disorrienting for you right now.  I suppose that's to be expected when you're a brand new being.  Why don't you try moving back and forth? \nUse A and D to go left and right"
