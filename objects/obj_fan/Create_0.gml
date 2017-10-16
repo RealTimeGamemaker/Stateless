@@ -12,6 +12,6 @@ enum possible_directions { // determines how the wind blows
 	right = 4//[1,0]
 }
 
-self.direction = possible_directions(left)
+self.my_d_lol = possible_directions.left
 // change this on a per-fan basis in the actual levels.
 // for ease, please leave this as the default value.
