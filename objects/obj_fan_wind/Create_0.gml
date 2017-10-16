@@ -11,4 +11,5 @@ enum possible_directions { // determines how the wind blows
 }
 */
 
-self.my_d_lol = possible_directions.left // this should change immediately upon creation (if needed)
+self.my_d_lol = possible_directions.left // this should change immediately upon creation
+																	// (if needed)
