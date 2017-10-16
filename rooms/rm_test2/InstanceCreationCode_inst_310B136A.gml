@@ -1,0 +1,2 @@
+is_pausing = true;
+popup_message = "Hello there, little IRMA.  Welcome to your life.  I'm KATE and I'm going to be running you through a few tests.  Let's start with something simple, shall we? How about basic movement?\n\nPress A to go left and D to go right"
