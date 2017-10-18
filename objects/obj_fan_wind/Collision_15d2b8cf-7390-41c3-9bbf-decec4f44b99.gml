@@ -26,6 +26,9 @@ v = [-12.5,-20]
 v[0] *= x_v
 v[1] *= y_v
 
-ds_list_add(other.external_forces,v)
-
+// to make sure the player doesn't get blown off the map while in a popup message
+if (other.player_cant_take_actions == false)
+{
+	ds_list_add(other.external_forces,v)
+}
 // obj_pushable should be changed to this once the new script is ready
