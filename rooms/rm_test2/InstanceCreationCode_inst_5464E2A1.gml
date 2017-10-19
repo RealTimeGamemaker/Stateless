@@ -1,1 +1,0 @@
-my_d_lol = possible_directions.up
