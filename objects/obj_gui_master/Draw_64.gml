@@ -222,10 +222,35 @@ if (player_beat_level = true)
 		draw_text_with_shadow(view_center-280, 475, par_message, 2, 2);
 	}
 	
-
-	
 	draw_set_halign(fa_center);	
 	draw_set_font(font_popup_message);
 	draw_set_color(c_purple); // starring Whoopi Goldberg
 	draw_text_with_shadow(view_center, 600, "Press Enter To Continue", 2, 2);
+}
+
+if (display_pausing_popup == true)
+{
+	// ensures both types of popups arent in use at the same time
+	if (popup_countdown > 0)
+	{
+		popup_countdown = 0;
+	}
+
+	draw_set_halign(fa_center);
+	draw_set_color(c_white);
+	draw_rectangle(view_center - 310, view_middle - 120, view_center + 310, view_middle + 250, 0);
+	draw_set_color(c_black);
+	draw_rectangle(view_center - 305, view_middle - 110, view_center + 305, view_middle + 240, 0);
+	draw_set_color(c_white);
+	draw_rectangle(view_center - 300, view_middle - 100, view_center + 300, view_middle + 230, 0);
+	
+	draw_set_font(font_popup_message);
+	draw_set_color(c_black);
+	draw_set_halign(fa_left);
+	draw_text_ext(view_center - 290, view_middle - 95, popup_message, 30, 590);
+
+	draw_set_color(c_purple) // starring Whoopi Goldberg
+	draw_set_halign(fa_center);
+	draw_text_with_shadow(view_center, view_middle + 185, "Press Enter To Continue", 2, 2); 
+	draw_set_halign(fa_left);
 }
