@@ -1,6 +1,6 @@
 /// @description Wind Creation
 
-r = random_range(-20,50)
+r = random_range(0,0)
 
 ds_list_add(wind, instance_create_layer(self.x + r, self.y + r, "instances", obj_fan_wind))
 ds_list_delete(wind, 0) // destroys first item in list
