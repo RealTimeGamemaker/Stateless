@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "5616a82c-65bf-4fd9-91ea-8e0e812c7fe9",
+            "Value": {
+                "id": "c037a49d-3a04-4b1b-b519-bc0309c86bb0",
+                "resourcePath": "sprites\\spr_laser_emitter\\spr_laser_emitter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "579d2199-fe71-4f54-bfaf-9f215007b49f",
             "Value": {
                 "id": "35d2e51e-ea7f-40bf-9dea-295cccca2d9e",
@@ -364,6 +372,14 @@
                 "id": "83baee2f-e2af-4122-8773-40f213e358d1",
                 "resourcePath": "sprites\\spr_dev_tileset\\spr_dev_tileset.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8745cdc9-784e-473a-8028-2e5c9afb4e28",
+            "Value": {
+                "id": "00ca6dc1-567e-44fb-b13b-4a85fc00db33",
+                "resourcePath": "objects\\obj_laser_emitter\\obj_laser_emitter.yy",
+                "resourceType": "GMObject"
             }
         },
         {
