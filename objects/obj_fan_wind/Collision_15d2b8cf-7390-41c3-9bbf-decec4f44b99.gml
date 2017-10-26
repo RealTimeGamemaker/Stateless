@@ -22,7 +22,7 @@ switch(self.my_d_lol){
 	break
 }
 
-v = [-12.5,-20]
+v = [-12.5,-10]
 v[0] *= x_v
 v[1] *= y_v
 
