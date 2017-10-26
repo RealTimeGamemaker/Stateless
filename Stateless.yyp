@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "be06310c-5bf3-4c3f-abef-6ea794f9c14f",
+            "Value": {
+                "id": "281d6d87-e8c0-4ccb-a084-89272d3944b3",
+                "resourcePath": "sprites\\spr_dev_tilesetback1\\spr_dev_tilesetback1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c2d0c7fe-611a-40c1-86ba-f41313a5afef",
             "Value": {
                 "id": "5f1de168-0cc5-47d1-b84c-41bd4f522bad",
