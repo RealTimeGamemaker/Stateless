@@ -655,6 +655,14 @@
             }
         },
         {
+            "Key": "df1cd82e-ebba-452d-8af6-c447d9fb78fb",
+            "Value": {
+                "id": "690e6878-9c75-4ab0-b94a-1762854625f0",
+                "resourcePath": "sounds\\snd_jump\\snd_jump.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "e024cdfe-d7e5-4b06-915d-1d03146b6c85",
             "Value": {
                 "id": "8421e5c1-e398-4c73-9f5d-d8865f235241",
