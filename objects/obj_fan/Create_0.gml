@@ -6,6 +6,8 @@ r = random_range(-20,50)
 
 wind = ds_list_create() // linked list of wind
 ds_list_add(wind, instance_create_layer(self.x + r, self.y + r, "Instances", obj_fan_wind))
+//ds_list_add(wind, instance_create_layer(self.x + r, self.y + r, "Instances", obj_fan_wind))
+//ds_list_add(wind, instance_create_layer(self.x + r, self.y + r, "Instances", obj_fan_wind))
 
 enum possible_directions { // determines how the wind blows
 	up = 1,//[0,1],

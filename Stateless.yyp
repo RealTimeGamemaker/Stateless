@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0afee97d-cf00-45f7-8560-f8d99e902468",
+            "Value": {
+                "id": "0210115d-b5b8-44c2-b59e-510a5a4cb10d",
+                "resourcePath": "sprites\\spr_smoke_detector\\spr_smoke_detector.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c43e388-9716-4649-a609-8590ee93d7c6",
             "Value": {
                 "id": "8e80dafa-ee7f-4fae-ae0f-6a1fc4a03e4a",
@@ -396,6 +404,14 @@
                 "id": "767c712c-f9cd-42df-b7d6-5ad9612bbf9c",
                 "resourcePath": "objects\\obj_fan\\obj_fan.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8f90ae6f-be1d-4a81-9569-c464b97a9fa5",
+            "Value": {
+                "id": "f44a4760-d797-4da9-9618-a2125e2db1ca",
+                "resourcePath": "sprites\\spr_smoke_detectors_range\\spr_smoke_detectors_range.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
