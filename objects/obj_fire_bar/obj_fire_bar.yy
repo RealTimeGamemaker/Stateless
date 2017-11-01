@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_fire_bar",
     "eventList": [
-        
+        {
+            "id": "56e07a4d-d7aa-4889-bf0a-846ab8d390a0",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "a0ddf9e1-8d8a-45e8-8367-ea994c9b4037"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
