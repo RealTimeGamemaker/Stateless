@@ -6,6 +6,7 @@ change_state = true; // variable used for invalid state change
 hit_points = 4;
 player_cant_take_actions = false;
 pressing = false;
+vent_grate_interaction = false;
 
 // Movement Variables
 velocity[0] = 0;
