@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "1bf6919d-e686-4a41-a920-b6275663a917",
+            "Value": {
+                "id": "66c7a0d5-3d18-4b51-9aa3-9cc84ac45c52",
+                "resourcePath": "objects\\obj_ice_bar\\obj_ice_bar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2526bab8-af2d-4103-95bd-f6bef0df00c6",
             "Value": {
                 "id": "5b691cf8-fb07-48d3-94db-3766a59b4462",
@@ -255,6 +263,14 @@
             }
         },
         {
+            "Key": "5060bbb5-eaee-47c8-9b54-b6ce2a6721cf",
+            "Value": {
+                "id": "4b19d389-46d5-4d3e-b1ae-081c0d7aa772",
+                "resourcePath": "sprites\\sprite32\\sprite32.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "51dba1ed-fb74-4a44-be8c-d4a14644fab3",
             "Value": {
                 "id": "527ebf7f-13f0-44a0-af06-263b304c05e6",
@@ -287,6 +303,14 @@
             }
         },
         {
+            "Key": "5b535b0b-27dc-44dd-888c-3a3c3dd48d25",
+            "Value": {
+                "id": "ce0418f7-edb4-4a99-8f26-5eac0295d24c",
+                "resourcePath": "objects\\obj_fireball\\obj_fireball.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5e61a1ce-a2bc-4c1b-aaf3-b092d64e8269",
             "Value": {
                 "id": "3c0433b4-0fcb-49b7-a41e-60d55f70d1a4",
@@ -299,6 +323,14 @@
             "Value": {
                 "id": "871b615f-afd0-42f4-9e09-79a51e1d34be",
                 "resourcePath": "sprites\\spr_popup_trigger\\spr_popup_trigger.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "62ccf9e7-d0cf-4ff7-a7ab-2c273b307f62",
+            "Value": {
+                "id": "68003920-993a-45c3-b963-e07c4d13cd50",
+                "resourcePath": "sprites\\spr_bar_base\\spr_bar_base.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -471,6 +503,14 @@
             }
         },
         {
+            "Key": "a0ddf9e1-8d8a-45e8-8367-ea994c9b4037",
+            "Value": {
+                "id": "3b9953f1-b76b-4dea-a021-22ac09069562",
+                "resourcePath": "objects\\obj_fire_bar\\obj_fire_bar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a32dd08f-aa00-4069-a713-d5e8f7ac0f38",
             "Value": {
                 "id": "ffeb3057-3243-4225-b169-214e294441f2",
@@ -543,6 +583,14 @@
             }
         },
         {
+            "Key": "b32b34b1-3c45-4e54-a9e2-ef59d6be6f19",
+            "Value": {
+                "id": "89c9eed5-96b5-4543-bb37-b9e26bdd965e",
+                "resourcePath": "sprites\\spr_fireball\\spr_fireball.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b379b51d-f5b1-40f6-882c-33ee4d5a00f6",
             "Value": {
                 "id": "3b77e87f-4b53-4ef5-ad58-3ff146445a46",
@@ -556,6 +604,14 @@
                 "id": "c541c0ca-fb3b-405b-a00d-ae096a318097",
                 "resourcePath": "scripts\\draw_text_with_shadow\\draw_text_with_shadow.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b4e48a6d-6b7e-4960-b24b-72d17dfea62b",
+            "Value": {
+                "id": "b8cad154-1cd7-493e-8c48-f2e462eda096",
+                "resourcePath": "sounds\\snd_solid\\snd_solid.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -692,6 +748,14 @@
                 "id": "c1f3f12a-2d90-4ac9-b2e1-e63b9d895ac1",
                 "resourcePath": "sprites\\spr_collidable_solid\\spr_collidable_solid.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dab9757c-33d9-47ba-b43e-09b28ee5d497",
+            "Value": {
+                "id": "52f46278-8322-49e7-b0df-fca592865a0e",
+                "resourcePath": "objects\\obj_iceball\\obj_iceball.yy",
+                "resourceType": "GMObject"
             }
         },
         {
