@@ -13,7 +13,7 @@ for (i=0; i<ds_list_size(wind); i++){
 	val.my_d_lol = self.my_d_lol
 }
 
-show_debug_message(ds_list_size(wind))
+// show_debug_message(ds_list_size(wind))
 
 if ds_list_size(wind) > 50 {
 	for (i=0; i<25; i++) {

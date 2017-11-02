@@ -1,1 +1,1 @@
-//self.my_d_lol = possible_directions.down
+self.my_d_lol = possible_directions.down
