@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "20798aab-3317-44c0-8db0-c93e892d090a",
+            "Value": {
+                "id": "88ea0d9a-4c93-499b-b498-368f1a576bf5",
+                "resourcePath": "rooms\\Amalie_Level\\Amalie_Level.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "2526bab8-af2d-4103-95bd-f6bef0df00c6",
             "Value": {
                 "id": "5b691cf8-fb07-48d3-94db-3766a59b4462",
