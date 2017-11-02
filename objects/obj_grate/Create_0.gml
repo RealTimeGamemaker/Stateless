@@ -11,14 +11,16 @@ collidable_instance = instance_create_layer(x,y,"Instances",obj_collidable_all);
 if (image_angle == 0)
 {
 	dy = 1;
-	
 	collidable_instance.y += sprite_height;
 }
 
 if (image_angle == 180)
 {
 	dy = -1;
-
+	show_debug_message("This happened!")
+	
+	collidable_instance.y -= sprite_height;
+	collidable_instance.x -= sprite_width;
 }
 
 collidable_instance.image_yscale = dy * 0.125;
