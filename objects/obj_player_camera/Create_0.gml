@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(alarm[1] < 0)
-{
-	fireball_touch=false
-}
+lockedCamera=true
+x=obj_player.x
+y=obj_player.y
+offset=0;
