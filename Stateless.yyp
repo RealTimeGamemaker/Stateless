@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "63f32890-9bbc-4eff-be07-03f362b5b65f",
+            "Value": {
+                "id": "5cd2c410-ce2e-4eae-aaa8-533f81165d33",
+                "resourcePath": "rooms\\rm_IRMAs_Birthday\\rm_IRMAs_Birthday.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "66637729-46d6-4be7-a349-698046b1d1ce",
             "Value": {
                 "id": "4b16dd28-04ce-44d1-84a7-51d7c7fd4d45",
