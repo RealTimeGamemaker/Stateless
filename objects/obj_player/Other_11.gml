@@ -21,8 +21,12 @@ if (hinput != 0) { //Checks to see if there is movement
 
 if (vinput > 0) {
 	if (place_meeting(x, y, obj_collidable_ladder)){
-	velocity[1] -= vinput * accelerations[state - 1, 1];
-	velocity[1] = clamp(velocity[1], -max_velocities[state - 1, 1] / 3, max_velocities[state - 1, 1] / 3);
+		onLadder=true;
+		velocity[1] -= vinput * accelerations[state - 1, 1];
+		velocity[1] = clamp(velocity[1], -max_velocities[state - 1, 1] / 3, max_velocities[state - 1, 1] / 3);
+	}
+	else{
+		onLadder=false;
 	}
 }
 

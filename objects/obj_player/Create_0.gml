@@ -63,3 +63,4 @@ enum liquid_states {
 	bot_slope = 5
 }
 liquid_state = liquid_states.idle;
+onLadder=false;
