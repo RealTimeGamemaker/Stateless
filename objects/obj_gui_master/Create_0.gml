@@ -1,5 +1,8 @@
 /// @description GUI Variable Setup
 
+// coin variable!
+coins = 0
+
 // health meter variables
 heart_1 = 0;
 heart_2 = 0;
