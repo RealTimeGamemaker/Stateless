@@ -266,7 +266,7 @@
             "Key": "5060bbb5-eaee-47c8-9b54-b6ce2a6721cf",
             "Value": {
                 "id": "4b19d389-46d5-4d3e-b1ae-081c0d7aa772",
-                "resourcePath": "sprites\\sprite32\\sprite32.yy",
+                "resourcePath": "sprites\\spr_iceball\\spr_iceball.yy",
                 "resourceType": "GMSprite"
             }
         },
