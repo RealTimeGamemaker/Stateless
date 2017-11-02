@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "6f1dbeef-790a-47bf-8a18-370ba537a70f",
+            "Value": {
+                "id": "559ec063-57b7-44e1-b775-a1521870e416",
+                "resourcePath": "rooms\\Base_Room_Duplicate_To_Make_Level\\Base_Room_Duplicate_To_Make_Level.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "7132bcd2-3ca3-4acc-a068-98222d0083c6",
             "Value": {
                 "id": "c002d912-ac2f-4765-98e5-5b705822de79",
