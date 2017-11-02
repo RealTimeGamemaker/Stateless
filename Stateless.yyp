@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "1cb62223-430b-4288-8fb0-6ab978b9f013",
+            "Value": {
+                "id": "e7d8918c-efdb-4dbd-a501-073cf77b5eba",
+                "resourcePath": "sprites\\spr_laser\\spr_laser.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2526bab8-af2d-4103-95bd-f6bef0df00c6",
             "Value": {
                 "id": "5b691cf8-fb07-48d3-94db-3766a59b4462",
@@ -404,6 +412,14 @@
                 "id": "b495fc25-6b98-4cb2-b698-7a7b9a2d6c47",
                 "resourcePath": "sprites\\spr_heart\\spr_heart.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8430a0e9-9db7-4c4e-818d-d81f2af56130",
+            "Value": {
+                "id": "9f6efb48-55b6-4146-b7ab-d2c7ee882d89",
+                "resourcePath": "rooms\\rm_test_lasers\\rm_test_lasers.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
