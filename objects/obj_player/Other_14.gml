@@ -7,7 +7,7 @@ if(!pressing and state == states.solid and player_cant_take_actions == false)
 
 if((state == states.liquid) or (state == states.gas))
 {
-	if (place_meeting(x, y, obj_grate) == true)
+	if (touching_vent_grate == true)
 	{
 			if (vent_grate_interaction == false)
 			{
