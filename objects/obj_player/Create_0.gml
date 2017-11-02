@@ -8,6 +8,7 @@ player_cant_take_actions = false;
 pressing = false;
 vent_grate_interaction = false;
 touching_vent_grate = false;
+fireball_touch = false;
 
 // Movement Variables
 velocity[0] = 0;
