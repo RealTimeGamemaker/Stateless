@@ -7,6 +7,9 @@ hit_points = 4;
 player_cant_take_actions = false;
 pressing = false;
 vent_grate_interaction = false;
+touching_vent_grate = false;
+fireball_touch = false;
+iceball_touch=false
 
 // Movement Variables
 velocity[0] = 0;
@@ -60,3 +63,4 @@ enum liquid_states {
 	bot_slope = 5
 }
 liquid_state = liquid_states.idle;
+onLadder=false;

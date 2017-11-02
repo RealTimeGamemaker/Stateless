@@ -5,13 +5,11 @@ if((obj_player.state == states.liquid) or (obj_player.state == states.gas))
 	if (player_entering_vent == true)
 	{
 		obj_player.x = player_vent_enter_x;
-		
-			
-		obj_player.y += (dy * vent_enter_speed / (room_speed))
 			
 		if (dy == 1)
 		{
-			if (obj_player.y >= y + sprite_height + 16)
+			if (((obj_player.state == states.liquid) and (obj_player.y >= y + sprite_height + 16)) or
+			((obj_player.state == states.gas) and (obj_player.y <= (y + sprite_height - 16))))
 			{
 				player_entering_vent = false;
 				grabbing_player = false;
@@ -21,7 +19,8 @@ if((obj_player.state == states.liquid) or (obj_player.state == states.gas))
 
 		if (dy == -1)
 		{
-			if (obj_player.y <= (y - obj_player.sprite_height - 16))
+			if ((obj_player.state == states.gas) and (obj_player.y <= (y - obj_player.sprite_height - 16))) or
+			((obj_player.state == states.liquid) and (obj_player.y >= (y + 16)))
 			{
 				player_entering_vent = false;
 				grabbing_player = false;
@@ -40,20 +39,26 @@ if((obj_player.state == states.liquid) or (obj_player.state == states.gas))
 		grabbing_player = true;
 	}
 
-	if ((player_entering_vent == false) and (place_meeting(x,y,obj_player) == true))
+	if (((player_entering_vent == false) and (place_meeting(x,y,obj_player) == true)) or
+	((dy = 1) and (obj_player.state == states.gas) and (place_meeting(x, y+9, obj_player) == true)) or
+	((dy = -1) and (obj_player.state == states.liquid) and (place_meeting(x, y-9, obj_player) == true))
+	)
 	{
-		display_on_screen_popup("Press I to go in vent", false, 1);
+		obj_player.touching_vent_grate = true;
+		display_on_screen_popup("Press I to go in vent", false, 0.1);
 		
 		if (obj_player.vent_grate_interaction == true)
 		{
 			player_entering_vent = true;
-			obj_player.x = x + (sprite_width / 2);
+			obj_player.x = x + (dy *(sprite_width / 2));
 			player_vent_enter_x = obj_player.x;
 			
 			instance_deactivate_object(collidable_instance);
+			
+			obj_player.vent_grate_interaction = false;
 		}
 	}
-
+	
 	if (grabbing_player == true)
 	{
 		

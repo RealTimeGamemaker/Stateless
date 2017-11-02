@@ -1,6 +1,7 @@
 /// @description Wind Creation
 
 velocity = -.25 * room_speed
+self.force_v = [-12.5,-10]
 
 /*
 enum possible_directions { // determines how the wind blows

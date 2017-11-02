@@ -22,13 +22,12 @@ switch(self.my_d_lol){
 	break
 }
 
-v = [-12.5,-10]
-v[0] *= x_v
-v[1] *= y_v
+self.force_v[0] *= x_v
+self.force_v[1] *= y_v
 
 // to make sure the player doesn't get blown off the map while in a popup message
 if (other.player_cant_take_actions == false)
 {
-	ds_list_add(other.external_forces,v)
+	ds_list_add(other.external_forces,self.force_v)
 }
 // obj_pushable should be changed to this once the new script is ready
