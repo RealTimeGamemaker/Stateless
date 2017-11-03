@@ -156,9 +156,9 @@
                 "id": "e7d8918c-efdb-4dbd-a501-073cf77b5eba",
                 "resourcePath": "sprites\\spr_laser\\spr_laser.yy",
                 "resourceType": "GMSprite"
-	    }
+            }
         },
-	{
+        {
             "Key": "20798aab-3317-44c0-8db0-c93e892d090a",
             "Value": {
                 "id": "88ea0d9a-4c93-499b-b498-368f1a576bf5",
@@ -383,14 +383,6 @@
             }
         },
         {
-            "Key": "63f32890-9bbc-4eff-be07-03f362b5b65f",
-            "Value": {
-                "id": "5cd2c410-ce2e-4eae-aaa8-533f81165d33",
-                "resourcePath": "rooms\\rm_IRMAs_Birthday\\rm_IRMAs_Birthday.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "66637729-46d6-4be7-a349-698046b1d1ce",
             "Value": {
                 "id": "4b16dd28-04ce-44d1-84a7-51d7c7fd4d45",
@@ -492,6 +484,14 @@
                 "id": "83baee2f-e2af-4122-8773-40f213e358d1",
                 "resourcePath": "sprites\\spr_dev_tileset\\spr_dev_tileset.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8557775d-ecbf-44e0-b64a-3721c9d519bf",
+            "Value": {
+                "id": "ec1db0f9-096d-4534-954d-65e24df32edd",
+                "resourcePath": "rooms\\rm_IRMAs_Birthday\\rm_IRMAs_Birthday.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

@@ -11,3 +11,8 @@ if (!instance_exists(obj_music_manager))
 {
 	instance_create_layer(-2,-2, "GUI & Music Town", obj_music_manager);
 }
+
+if(!instance_exists(obj_player_camera))
+{
+	instance_create_layer(1,1,"Instances", obj_player_camera);
+}
