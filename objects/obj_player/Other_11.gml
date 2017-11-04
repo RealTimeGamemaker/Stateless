@@ -30,7 +30,7 @@ if solid_state == solid_states.jumping and velocity[1] == 0 and place_meeting(x,
 	if solid_state == solid_states.idle {
 		solid_state = solid_states.transition;
 		flip = hinput; // make sure we are facing the right way
-		image_speed = 1.8;
+		image_speed = 3;
 	}
 } else if hinput == 0 and place_meeting(x,y+1,obj_collidable_all) {
 	solid_state = solid_states.idle;
@@ -53,6 +53,10 @@ if solid_state == solid_states.idle {
 } else if solid_state == solid_states.jumping {
 	if image_index < 43 or image_index > 51 { // Loop Animation
 		image_index = 43;
+	}
+	if (hinput != 0) { //Checks to see if there is movement
+		velocity[0] += hinput * accelerations[state - 1, 0];
+		velocity[0] = clamp(velocity[0], -max_velocities[state - 1, 0], max_velocities[state - 1, 0]);
 	}
 } else if solid_state == solid_states.transition {
 	if image_index < 15 or image_index > 20 { // Loop Animation
