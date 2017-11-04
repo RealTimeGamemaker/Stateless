@@ -64,7 +64,7 @@ if((obj_player.state == states.liquid) or (obj_player.state == states.gas))
 		
 		if (let_player_go == false)
 		{
-			obj_player.x += (x - obj_player.x) / (room_speed / 2);
+			obj_player.x += ((x+(sprite_width/2)) - obj_player.x) / (room_speed / 2);
 		}
 	
 		if ((obj_player.x >= (x+(sprite_width/2)) - 1) and (obj_player.x <= (x+(sprite_width/2)) + 1))

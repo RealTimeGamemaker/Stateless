@@ -9,7 +9,7 @@ pressing = false;
 vent_grate_interaction = false;
 touching_vent_grate = false;
 fireball_touch = false;
-iceball_touch=false
+iceball_touch=false;
 
 // Movement Variables
 velocity[0] = 0;
@@ -63,4 +63,16 @@ enum liquid_states {
 	bot_slope = 5
 }
 liquid_state = liquid_states.idle;
+enum gas_states {
+	float = 0,
+	moving = 1
+}
+gas_state = gas_states.float;
+enum solid_states {
+	idle = 0,
+	walking = 1,
+	jumping = 2,
+	transition = 3
+}
+solid_state = solid_states.idle;
 onLadder=false;
