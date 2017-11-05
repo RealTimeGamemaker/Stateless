@@ -9,7 +9,6 @@ if place_meeting(obj_player.x,obj_player.y,obj_smoke_detectors_range){
 	
 }
 if (idle == false){ 
-	
 	if point_distance(x, y, xx, yy) < 6 {
 		pos++;
 		if pos == path_get_number(global.path){
@@ -17,19 +16,25 @@ if (idle == false){
 			pos = 1
 			xx = path_get_point_x(global.path, pos)
 			yy = path_get_point_y(global.path, pos)
+			returning = true
 		}
 		else{
 			xx = path_get_point_x(global.path, pos)
 			yy = path_get_point_y(global.path, pos)
 		}
-		if point_distance(x, y, obj_player.x, obj_player.y) < 200{
+		if point_distance(x, y, obj_player.x, obj_player.y) < 200 and returning == false{
 			path_add_point(global.path, obj_player.x,obj_player.y,8)
 		}
 		if x == start_x and y == start_y{
 			idle = true
+			returning = false
+			mov_speed = 6
+		}
+		else{
+			mov_speed = 4
 		}
 	}
-	mp_potential_step(xx, yy, 3, false)
+	mp_potential_step(xx, yy, mov_speed, false)
 
 }
 image_angle = direction
