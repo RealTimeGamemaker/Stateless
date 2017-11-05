@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "043f770e-848a-423f-8707-91d83d5e04dd",
+            "Value": {
+                "id": "1225a773-f82b-4762-af97-2027ccc342a8",
+                "resourcePath": "rooms\\rm_tyler\\rm_tyler.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "04ef9432-0ea1-4d2c-ab47-b400395d7a8c",
             "Value": {
                 "id": "92693955-0e99-4d2e-b0ad-c47078f0a75c",

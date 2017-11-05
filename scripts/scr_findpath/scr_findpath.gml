@@ -1,7 +1,7 @@
-var sx = obj_enemy.x
-var sy = obj_enemy.y
-var fx = obj_player.x
-var fy = obj_player.y - 16
+var sx = argument0
+var sy = argument1
+var fx = argument2
+var fy = argument3
 
 if !mp_grid_path(global.AI_PATH, global.path, sx, sy, fx, fy, true){
 	show_message("NO PATH!")

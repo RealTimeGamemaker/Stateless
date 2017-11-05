@@ -3,5 +3,5 @@ global.path = path_add()
 
 mp_grid_add_instances(global.AI_PATH, obj_collidable_all, false)
 
-scr_findpath()
+//scr_findpath()
 //show_debug_message(string(obj_enemy.x) +" : "+ string(obj_enemy.y) +" - "+ string(obj_player.x) +" : " + string(obj_player.y));

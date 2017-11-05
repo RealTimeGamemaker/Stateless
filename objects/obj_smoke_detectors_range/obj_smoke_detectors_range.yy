@@ -5,16 +5,6 @@
     "name": "obj_smoke_detectors_range",
     "eventList": [
         {
-            "id": "2c2f9856-1fa6-49c1-9a54-38550e776b39",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "b119f182-0c66-46d5-8806-009f3211dad7",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "77a1b18e-3b31-4d59-bc86-25ac441e45e9"
-        },
-        {
             "id": "7523a324-4633-4a9a-b1d5-06f6d981f6e6",
             "modelName": "GMEvent",
             "mvc": "1.0",
