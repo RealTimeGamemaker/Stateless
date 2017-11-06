@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "1092f469-5f51-4a3f-bed5-1b3896e1786f",
-            "Value": {
-                "id": "25bba18d-5cde-4ffa-8fc4-f08a9dc0cf3c",
-                "resourcePath": "objects\\obj_vent\\obj_vent.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "10ee9b75-0c32-4a38-9759-8157407af63d",
             "Value": {
                 "id": "52746cf9-da24-47fe-995f-6a9282f22a14",
@@ -252,6 +244,14 @@
                 "id": "9edf7c6b-9a44-4746-bcec-754758d41341",
                 "resourcePath": "sprites\\sprite35\\sprite35.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2d66b3aa-c9f9-4144-a5d3-bce47b7d0c9b",
+            "Value": {
+                "id": "4b87b984-d153-49a5-b3c5-c5b44ca13f51",
+                "resourcePath": "objects\\obj_vent\\obj_vent.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -580,14 +580,6 @@
                 "id": "00ca6dc1-567e-44fb-b13b-4a85fc00db33",
                 "resourcePath": "objects\\obj_laser_emitter\\obj_laser_emitter.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "89a68a20-7cd8-4466-ba93-1e53bc9fa5e9",
-            "Value": {
-                "id": "958a767a-b2bb-4e07-9add-8610d34e11b4",
-                "resourcePath": "sprites\\spr_vent\\spr_vent.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1012,6 +1004,14 @@
                 "id": "2fdb653f-07d2-4336-8806-c9ea4d970127",
                 "resourcePath": "objects\\obj_trigger_set_state_liquid\\obj_trigger_set_state_liquid.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e9937562-ce80-4c6e-bfc7-9c4d9f644ab7",
+            "Value": {
+                "id": "778ca120-6de5-4df6-b399-8594803f6911",
+                "resourcePath": "sprites\\spr_vent\\spr_vent.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
