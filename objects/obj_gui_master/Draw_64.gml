@@ -110,7 +110,7 @@ if (in_main_menu == false)
 		draw_text_with_shadow(view_center, 50, "Paused", 4, 4);
 	
 		draw_set_font(font_popup_message);
-		draw_set_color(c_purple); // starring Whoopi Goldberg
+		draw_set_color(c_orange); // no longer starring Whoopi Goldberg
 		draw_text_with_shadow(view_center, 200, "Resume Game", 2, 2);
 		draw_text_with_shadow(view_center, 250, "Restart Level", 2, 2);
 		draw_text_with_shadow(view_center, 300, "Options", 2, 2);
