@@ -44,7 +44,7 @@ if((obj_player.state == states.liquid) or (obj_player.state == states.gas))
 			
 			if (obj_player.state == states.gas)
 			{
-				player_vent_enter_y = obj_player.y + (sprite_height / 2);
+				player_vent_enter_y = obj_player.y + 16;
 			}
 			else
 			{
