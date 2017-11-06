@@ -10,6 +10,15 @@ vent_grate_interaction = false;
 touching_vent_grate = false;
 fireball_touch = false;
 iceball_touch=false;
+allowed_to_change_states=true;
+if (room==rm_IRMAs_Birthday)
+{
+	no_state_change_message_number=1;
+}
+else
+{
+	no_state_change_message_number=3;
+}
 
 // Movement Variables
 velocity[0] = 0;
