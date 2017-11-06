@@ -14,6 +14,10 @@ switch (room)
 		room_par = 69;
 		next_room = rm_start;
 		break;
+	case rm_IRMAs_Birthday:
+		room_par = 0;
+		next_room = rm_test2;
+		break;
 	default:
 		room_par = 50;
 		next_room = rm_start;

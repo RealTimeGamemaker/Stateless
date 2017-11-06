@@ -71,5 +71,17 @@ path_add_point(lng_circle_down_clockwise, x - (35 * sz), y + (85 *sz), 100);
 path_add_point(lng_circle_down_clockwise, x - (50 * sz), y + (50 * sz), 100);
 path_add_point(lng_circle_down_clockwise, x - (35 * sz), y + (15 * sz), 100);
 
+up_and_down_768 = path_add()
+path_add_point(up_and_down_768, x, y, 200);
+path_add_point(up_and_down_768, x, y-800, 200);
+path_add_point(up_and_down_768, x, y+32, 200);
+path_add_point(up_and_down_768, x, y, 200);
+
+down_and_up_768 = path_add()
+path_add_point(down_and_up_768, x, y, 275);
+path_add_point(down_and_up_768, x, y+800, 275);
+path_add_point(down_and_up_768, x, y-32, 275);
+path_add_point(down_and_up_768, x, y, 275);
+
 path = sht_right_and_back;
 started = false;
