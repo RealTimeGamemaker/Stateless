@@ -38,7 +38,7 @@ if((in_main_menu == true) and (in_option_menu == false) and (just_left_option_me
 	switch (main_menu_selection)
 	{
 		case 0:						// "New Game"
-			room_goto(rm_test2);
+			room_goto(next_room);
 			break;
 		case 1:						// "Options"
 			in_option_menu = true;

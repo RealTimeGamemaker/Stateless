@@ -9,6 +9,9 @@ heart_2 = 0;
 heart_3 = 0;
 heart_4 = 0;
 
+// score variable
+totalScore=0;
+
 // clock variables
 time = 0;
 real_seconds = 0;
@@ -45,7 +48,7 @@ next_room = rm_start;
 level_fade_out_alpha = 0;
 display_time_timer = 2.0;
 display_par_timer = 3.0;
-
+display_score_timer=4.0;
 // Pausing popup message variables
 display_pausing_popup = false;
 

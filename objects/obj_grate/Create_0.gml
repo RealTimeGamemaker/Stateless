@@ -17,7 +17,6 @@ if (image_angle == 0)
 if (image_angle == 180)
 {
 	dy = -1;
-	show_debug_message("This happened!")
 	
 	collidable_instance.y -= sprite_height;
 	collidable_instance.x -= sprite_width;

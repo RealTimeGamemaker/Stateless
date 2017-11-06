@@ -20,3 +20,4 @@ self.my_d_lol = possible_directions.left
 //val = ds_list_find_value(wind, 0)
 //val.my_d_lol = self.my_d_lol
 // first wind is g2g
+fan_is_disabled = false;
