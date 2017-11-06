@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "475670c5-1c3a-4f59-963d-44bb824ab217",
+            "Value": {
+                "id": "a46bad6d-7e41-42ac-a9de-9e311c55202d",
+                "resourcePath": "sprites\\spr_underdirt\\spr_underdirt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4e34d3b5-d10c-42b9-a527-326c588f3185",
             "Value": {
                 "id": "2abc8ee7-cbb0-4244-a7d2-524e37aeb494",
@@ -570,7 +578,7 @@
             "Key": "8557775d-ecbf-44e0-b64a-3721c9d519bf",
             "Value": {
                 "id": "ec1db0f9-096d-4534-954d-65e24df32edd",
-                "resourcePath": "rooms\\rm_IRMAs_Birthday\\rm_IRMAs_Birthday.yy",
+                "resourcePath": "rooms\\rm_IRMAs_Birthday1\\rm_IRMAs_Birthday1.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1052,6 +1060,14 @@
                 "id": "6f5686e4-ce15-4300-98d2-c2e378fec037",
                 "resourcePath": "scripts\\display_on_screen_popup\\display_on_screen_popup.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ec4e8103-4267-460d-92ac-6f86b28f1df0",
+            "Value": {
+                "id": "e3ef37b0-1572-4509-8016-217090da6f55",
+                "resourcePath": "rooms\\rm_IRMAs_Birthday2\\rm_IRMAs_Birthday2.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

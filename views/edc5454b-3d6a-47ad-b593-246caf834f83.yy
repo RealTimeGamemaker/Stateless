@@ -19,7 +19,10 @@
         "5b535b0b-27dc-44dd-888c-3a3c3dd48d25",
         "dab9757c-33d9-47ba-b43e-09b28ee5d497",
         "2d66b3aa-c9f9-4144-a5d3-bce47b7d0c9b",
-        "c4e63320-7a9c-472c-af23-fac80a02ef07"
+        "c4e63320-7a9c-472c-af23-fac80a02ef07",
+        "8745cdc9-784e-473a-8028-2e5c9afb4e28",
+        "a32dd08f-aa00-4069-a713-d5e8f7ac0f38",
+        "77a1b18e-3b31-4d59-bc86-25ac441e45e9"
     ],
     "filterType": "GMObject",
     "folderName": "Obstacles",
