@@ -1,1 +1,0 @@
-path = up_and_down_768;

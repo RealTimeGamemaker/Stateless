@@ -1,2 +1,0 @@
-popup_message="Why hello there!  Allow me to introduce yourself!  You are IRMA - an Intelligent Rephaseable Matter Array. And seeing as how you just came to life... Happy Birthday!  For the festivities, I'm going to get you used to your new body.  Let's get you started moving around!"
-is_pausing=true;

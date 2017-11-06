@@ -2,6 +2,7 @@
 
 r = random_range(-40,40)
 
+// If it's been turned off w/ a button, don't make new wind
 if (fan_is_disabled == false)
 {
 	ds_list_add(wind, instance_create_layer(self.x + r, self.y + r + 20, "instances", obj_fan_wind))

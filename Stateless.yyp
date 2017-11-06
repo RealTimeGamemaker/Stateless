@@ -362,7 +362,7 @@
             "Key": "475670c5-1c3a-4f59-963d-44bb824ab217",
             "Value": {
                 "id": "a46bad6d-7e41-42ac-a9de-9e311c55202d",
-                "resourcePath": "sprites\\sprite41\\sprite41.yy",
+                "resourcePath": "sprites\\spr_underdirt\\spr_underdirt.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -578,7 +578,7 @@
             "Key": "8557775d-ecbf-44e0-b64a-3721c9d519bf",
             "Value": {
                 "id": "ec1db0f9-096d-4534-954d-65e24df32edd",
-                "resourcePath": "rooms\\rm_IRMAs_Birthday\\rm_IRMAs_Birthday.yy",
+                "resourcePath": "rooms\\rm_IRMAs_Birthday1\\rm_IRMAs_Birthday1.yy",
                 "resourceType": "GMRoom"
             }
         },
