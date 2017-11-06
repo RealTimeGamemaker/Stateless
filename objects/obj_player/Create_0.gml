@@ -25,7 +25,7 @@ velocity[0] = 0;
 velocity[1] = 0;
 
 accelerations[0, 0] = 1;
-accelerations[0, 1] = 16;
+accelerations[0, 1] = 18;
 accelerations[1, 0] = 1;
 accelerations[1, 1] = 0;
 accelerations[2, 0] = 1;
@@ -33,7 +33,7 @@ accelerations[2, 1] = -3;
 
 max_velocities[0, 0] = 6;
 max_velocities[0, 1] = 16;
-max_velocities[1, 0] = 7.5;
+max_velocities[1, 0] = 12;
 max_velocities[1, 1] = 0;
 max_velocities[2, 0] = 1;
 max_velocities[2, 1] = 3;
