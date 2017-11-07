@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "91349a2e-5a8e-4563-ac3c-ebfad127309f",
+            "Value": {
+                "id": "6f7c5fe6-7f3d-4495-9f2d-1527492f2466",
+                "resourcePath": "rooms\\rm_kelby\\rm_kelby.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "946faf8e-93b7-40ef-bc9b-d6d3555fad98",
             "Value": {
                 "id": "ce015d22-901c-45ec-b56d-556f380b13ca",
