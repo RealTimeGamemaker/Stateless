@@ -26,6 +26,7 @@ if solid_state == solid_states.jumping and velocity[1] == 0 and place_meeting(x,
 } else if j_key and place_meeting(x,y+1,obj_collidable_all) {
 	solid_state = solid_states.jumping;
 	velocity[1] = -accelerations[state - 1, 1];
+    audio_play_sound(snd_jump, 10, false);
 } else if hinput != 0 {
 	if solid_state == solid_states.idle {
 		solid_state = solid_states.transition;

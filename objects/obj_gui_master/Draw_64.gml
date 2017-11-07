@@ -132,7 +132,7 @@ if((in_main_menu == true) and (in_option_menu = false))
 	draw_text_with_shadow(view_center, 50, "Stateless", 4, 4);
 	
 	draw_set_font(font_popup_message);
-	draw_set_color(c_purple); // starring Whoopi Goldberg
+	draw_set_color(c_orange); // starring Whoopi Goldberg
 	draw_text_with_shadow(view_center, 200, "New Game", 2, 2);
 	draw_text_with_shadow(view_center, 250, "Options", 2, 2);
 	draw_text_with_shadow(view_center, 300, "Quit Game", 2, 2);
@@ -159,7 +159,7 @@ if (in_option_menu == true)
 	draw_text_with_shadow(view_center, 50, "Options", 4, 4);
 	
 	draw_set_font(font_popup_message);
-	draw_set_color(c_purple); // starring Whoopi Goldberg
+	draw_set_color(c_orange); // starring Whoopi Goldberg
 	draw_text_with_shadow(view_center, 200, "Go Back", 2, 2);
 	
 
@@ -183,7 +183,7 @@ if (player_is_dead == true)
 	draw_text_with_shadow(view_center, 200, "Oh No! You Died!", 4, 4);
 	
 	draw_set_font(font_popup_message);
-	draw_set_color(c_purple); // starring Whoopi Goldberg
+	draw_set_color(c_orange); // starring Whoopi Goldberg
 	draw_text_with_shadow(view_center, 384, "Restart Level", 2, 2);
 	draw_text_with_shadow(view_center, 434, "Return to Main Menu", 2, 2);
 	draw_text_with_shadow(view_center, 484, "Quit Game", 2, 2);
@@ -250,7 +250,7 @@ if (player_beat_level = true)
 	
 	draw_set_halign(fa_center);	
 	draw_set_font(font_popup_message);
-	draw_set_color(c_purple); // starring Whoopi Goldberg
+	draw_set_color(c_orange); // starring Whoopi Goldberg
 	draw_text_with_shadow(view_center, 600, "Press Enter To Continue", 2, 2);
 }
 
@@ -275,7 +275,7 @@ if (display_pausing_popup == true)
 	draw_set_halign(fa_left);
 	draw_text_ext(view_center - 290, view_middle - 95, popup_message, 30, 590);
 
-	draw_set_color(c_purple) // starring Whoopi Goldberg
+	draw_set_color(c_orange) // starring Whoopi Goldberg
 	draw_set_halign(fa_center);
 	draw_text_with_shadow(view_center, view_middle + 185, "Press Enter To Continue", 2, 2); 
 	draw_set_halign(fa_left);

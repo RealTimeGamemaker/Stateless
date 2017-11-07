@@ -1,1 +1,2 @@
-hit_points = 0;
+hit_points--;
+audio_play_sound(snd_hit, 10, false);
