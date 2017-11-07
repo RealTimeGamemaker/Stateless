@@ -1,0 +1,2 @@
+popup_message="Oh, I hope I didn't startle you with that drop.  The good news is that you're just fine.  Spikes can't hurt you when you're a liquid.  The bad news is that you're not strong enough to jump."
+is_pausing = true;

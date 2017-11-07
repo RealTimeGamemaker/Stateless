@@ -1,2 +1,2 @@
-popup_message="Here's your next birthday surprise!  Unlike most beings, you're able to change your state of matter, just because you feel like it.  Well, once I unlock it, that is."
+popup_message="Here's your next birthday surprise!  Unlike most beings, you're able to change your state of matter, to help with the task at hand.  Well, once I unlock that function."
 is_pausing=true;

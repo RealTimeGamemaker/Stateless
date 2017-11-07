@@ -83,5 +83,30 @@ path_add_point(down_and_up_768, x, y+800, 275);
 path_add_point(down_and_up_768, x, y-32, 275);
 path_add_point(down_and_up_768, x, y, 275);
 
+up_and_down_1024 = path_add()
+path_add_point(up_and_down_1024, x, y, 300);
+path_add_point(up_and_down_1024, x, y-1024, 300);
+path_add_point(up_and_down_1024, x, y, 300);
+
+left_and_right_384 = path_add()
+path_add_point(left_and_right_384, x, y, 112.5);
+path_add_point(left_and_right_384, x+384, y, 112.5);
+path_add_point(left_and_right_384, x, y, 112.5);
+
+left_and_right_384_2 = path_add()
+path_add_point(left_and_right_384_2, x, y, 155.5555);
+path_add_point(left_and_right_384_2, x+448, y, 155.5555);
+path_add_point(left_and_right_384_2, x, y, 155.5555);
+
+up_and_down_512 = path_add()
+path_add_point(up_and_down_512, x, y, 200);
+path_add_point(up_and_down_512, x, y-512, 200);
+path_add_point(up_and_down_512, x, y, 200);
+
+up_and_down_2368 = path_add()
+path_add_point(up_and_down_2368, x, y, 153.3332767857143);
+path_add_point(up_and_down_2368, x, y-2432, 153.3332767857143);
+path_add_point(up_and_down_2368, x, y, 153.3332767857143);
+
 path = sht_right_and_back;
 started = false;
