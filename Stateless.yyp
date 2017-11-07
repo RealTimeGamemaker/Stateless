@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "30997a0b-712f-4740-90b2-bb86cc1af407",
+            "Value": {
+                "id": "e26a840d-f969-48b2-be28-28ecaec29545",
+                "resourcePath": "rooms\\rm_evan\\rm_evan.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "33d24faa-49b6-4dd5-b2aa-e75d44cd11b0",
             "Value": {
                 "id": "8a4c88a9-17c8-4c6f-8e28-329f22e9a94c",
@@ -292,6 +300,14 @@
                 "id": "22e8aab8-3823-4498-8adb-4bc91a2619af",
                 "resourcePath": "views\\3967a6ce-1086-4b3a-94b8-25ae5194801e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "399b64d8-1f17-4604-9f76-5dd7713f1010",
+            "Value": {
+                "id": "0d482695-198a-43ff-8fee-a463380d57fa",
+                "resourcePath": "sprites\\spr_laser_diode\\spr_laser_diode.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
