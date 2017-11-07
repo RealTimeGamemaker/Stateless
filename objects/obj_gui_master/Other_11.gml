@@ -20,17 +20,22 @@ switch (room)
 	case rm_kelby:
 		room_par = 7;
 		next_room = rm_test2;
+		break;
 	case rm_test2:
 		room_par = 15;
-		next_room = rm_test;
+		next_room = rm_tyler;
 		break;
-	case rm_test:
+	case rm_tyler:
 		room_par = 7;
-		next_room = rm_start;
+		next_room = rm_evan;
 		break;
-	case rm_test_slopes:
+	case rm_evan:
 		room_par = 66;
-		next_room = rm_start;
+		next_room = rm_level_ian;
+		break;
+	case rm_level_ian:
+		room_par = 66;
+		next_room = Amalie_Level;
 		break;
 	default:
 		room_par = 50;
