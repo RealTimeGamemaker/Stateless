@@ -15,3 +15,9 @@ if (cur_room == rm_test2 and playing == false){
 	scr_play_music(cur_music)
 	//audio_play_sound(snd_allstar,0,true)
 }
+if(playing == false)
+{
+	playing = true
+	cur_music = snd_ambient
+	scr_play_music(cur_music)
+}
