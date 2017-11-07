@@ -42,3 +42,8 @@ if ((display_time_timer >= 0) and (player_beat_level == true))
 {
 	display_time_timer -= (1 / room_speed);
 }
+
+if ((display_score_timer >= 0) and (player_beat_level == true))
+{
+	display_score_timer -= (1 / room_speed);
+}

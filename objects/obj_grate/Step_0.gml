@@ -45,7 +45,7 @@ if((obj_player.state == states.liquid) or (obj_player.state == states.gas))
 	)
 	{
 		obj_player.touching_vent_grate = true;
-		display_on_screen_popup("Press I to go in vent", false, 0.1);
+		display_on_screen_popup("Press I to go through grate", false, 0.1);
 		
 		if (obj_player.vent_grate_interaction == true)
 		{
