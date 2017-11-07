@@ -199,20 +199,20 @@ if (player_beat_level = true)
 	totalScore=0;
 	// score calc code
 	totalScore+=(coins*50);
-	if(heart_1==1){
+	if(heart_1==0){
 		totalScore+=200;
 	}
-	if(heart_2==1){
+	if(heart_2==0){
 		totalScore+=200;
 	}
-	if(heart_3==1){
+	if(heart_3==0){
 		totalScore+=200;
 	}
-	if(heart_4==1){
+	if(heart_4==0){
 		totalScore+=200;
 	}
-	totalScore+=clamp(1800-(real_seconds*10),0,1800);
-	totalScore+=clamp(room_par-obj_player.states_changed_count*50,0,999999999);
+	totalScore+=clamp(1800-((real_seconds*10)+(minutes*600)+(hours*36000)),0,1800);
+	totalScore+=clamp((room_par-obj_player.states_changed_count)*20,0,999999999);
 	//end of score calc
 	
 	draw_set_color(c_black);
