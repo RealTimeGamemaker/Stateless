@@ -20,11 +20,12 @@ switch (room)
 	case rm_kelby:
 		room_par = 7;
 		next_room = rm_test2;
+		break;
 	case rm_test2:
 		room_par = 15;
-		next_room = rm_test;
+		next_room = rm_tyler;
 		break;
-	case rm_test:
+	case rm_tyler:
 		room_par = 7;
 		next_room = rm_start;
 		break;
