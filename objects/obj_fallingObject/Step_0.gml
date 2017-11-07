@@ -5,7 +5,12 @@ if(falling){
 		y+=3;
 	}
 	else if(place_meeting(x,y,all)){
-		instance_deactivate_object(self);
+		if(!place_meeting(x,y,obj_fallingObject_trigger)){
+			instance_deactivate_object(self);
+		}
+		if(place_meeting(x,y,obj_fallingObject_trigger)){
+			y+=3;
+		}
 	}
 	else{
 		y+=3;
