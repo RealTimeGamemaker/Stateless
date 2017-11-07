@@ -27,6 +27,7 @@ if(state!=states.solid and change_state!=false and player_cant_take_actions==fal
 		else
 		{
 			state=states.solid;
+			audio_play_sound(snd_solid, 10, false);
 			states_changed_count++;
 		}
 	}
