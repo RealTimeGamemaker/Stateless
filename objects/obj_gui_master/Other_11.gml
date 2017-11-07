@@ -31,16 +31,12 @@ switch (room)
 		break;
 	case rm_tyler:
 		room_par = 66;
-		next_room = rm_level_Ian;
-		break;
-	case rm_level_Ian:
-		room_par = 66;
-		next_room = Amalie_Level;
-		break;
-	case Amalie_Level:
-		room_par = 66;
 		next_room = rm_start;
 		break;
+	//case rm_level_Ian:
+	//	room_par = 66;
+	//	next_room = rm_start;
+	//	break;
 	default:
 		room_par = 50;
 		next_room = rm_start;
