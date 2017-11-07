@@ -843,8 +843,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_7177CC49",
-                    "x": 992,
-                    "y": 768,
+                    "x": 736,
+                    "y": 704,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -2842,8 +2842,8 @@
                     "colour": {
                         "Value": 4294967295
                     },
-                    "creationCodeFile": "InstanceCreationCode_inst_346C9498.gml",
-                    "creationCodeType": ".gml",
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_346C9498",
                     "objId": "260571a1-9d48-47c2-a1fa-00c80e015349",
