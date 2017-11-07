@@ -4,6 +4,7 @@ if(alarm[0] < 0 and obj_player.player_cant_take_actions=false and obj_player.fir
 // waits until alarm counts down
 {
 	obj_player.hit_points--;
+    audio_play_sound(snd_hit, 10, false);
 	obj_player.fireball_touch=true
 	obj_player.alarm[1] = room_speed * 2;
 	alarm[0] = room_speed * 2;
