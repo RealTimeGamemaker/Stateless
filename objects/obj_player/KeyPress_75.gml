@@ -25,6 +25,7 @@ if(state!=states.liquid && change_state!=false and player_cant_take_actions==fal
 	else
 	{
 		state=states.liquid;
+		audio_play_sound(snd_liquid, 10, false);
 		states_changed_count++;
 	}
 }

@@ -22,6 +22,7 @@ if(state!=states.gas && change_state!=false && player_cant_take_actions==false){
 	else
 	{
 		state=states.gas;
+		audio_play_sound(snd_gas, 10, false);
 		states_changed_count++;
 	}
 }
