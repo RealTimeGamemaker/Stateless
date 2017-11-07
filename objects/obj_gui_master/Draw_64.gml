@@ -196,6 +196,25 @@ if (player_is_dead == true)
 
 if (player_beat_level = true)
 {
+	totalScore=0;
+	// score calc code
+	totalScore+=(coins*50);
+	if(heart_1==1){
+		totalScore+=200;
+	}
+	if(heart_2==1){
+		totalScore+=200;
+	}
+	if(heart_3==1){
+		totalScore+=200;
+	}
+	if(heart_4==1){
+		totalScore+=200;
+	}
+	totalScore+=clamp(1800-(real_seconds*10),0,1800);
+	totalScore+=clamp(room_par-obj_player.states_changed_count*50,0,999999999);
+	//end of score calc
+	
 	draw_set_color(c_black);
 	draw_set_alpha(level_fade_out_alpha);
 	draw_rectangle(0, 0, view_width, view_height, 0);
@@ -220,6 +239,13 @@ if (player_beat_level = true)
 		draw_set_font(font_popup_message);
 		draw_set_halign(fa_left);
 		draw_text_with_shadow(view_center-280, 475, par_message, 2, 2);
+	}
+	if (display_score_timer <= 0)
+	{
+		draw_set_color(c_yellow);
+		draw_set_font(font_popup_message);
+		draw_set_halign(fa_left);
+		draw_text_with_shadow(view_center-280, 550, "Score:     " + string(totalScore), 2, 2);
 	}
 	
 	draw_set_halign(fa_center);	
