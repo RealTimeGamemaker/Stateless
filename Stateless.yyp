@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "399b64d8-1f17-4604-9f76-5dd7713f1010",
+            "Value": {
+                "id": "0d482695-198a-43ff-8fee-a463380d57fa",
+                "resourcePath": "sprites\\spr_laser_diode\\spr_laser_diode.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3e4a3047-12a1-4075-9d6c-64acb7d8c226",
             "Value": {
                 "id": "2aabe7c3-85d8-42c8-94b1-9248ce5c9761",
