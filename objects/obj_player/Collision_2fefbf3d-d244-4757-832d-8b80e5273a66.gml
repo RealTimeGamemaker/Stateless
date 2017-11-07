@@ -1,1 +1,1 @@
-hit_points = 0;
+hit_points--;
