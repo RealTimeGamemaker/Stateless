@@ -615,6 +615,14 @@
             }
         },
         {
+            "Key": "8f91216b-667a-4f45-adcc-a9df8dea31c4",
+            "Value": {
+                "id": "24e73f01-77e7-4e79-9b89-110e22553033",
+                "resourcePath": "sounds\\snd_gas\\snd_gas.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "910aed9a-f319-4be6-b8e9-835a8ecf4e3a",
             "Value": {
                 "id": "32097070-27b1-4d0a-91a7-d7fae5021ad0",
@@ -916,6 +924,14 @@
                 "id": "49a41184-1e19-4dd1-a2cc-009ecd8cedf0",
                 "resourcePath": "views\\d07fe2c5-f51e-4504-ba81-26ae2da93df9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d1be7d0d-b024-4116-85ea-321c2a79440f",
+            "Value": {
+                "id": "b1e21d04-5faf-4e67-96d7-edc52499b14b",
+                "resourcePath": "sounds\\snd_liquid\\snd_liquid.yy",
+                "resourceType": "GMSound"
             }
         },
         {
