@@ -43,11 +43,8 @@ for (var i = 0; i < array_length_1d(collidable_type_names); i++) { // for every 
 		normal_y /= o.sprite_height;
 		
 		while (place_meeting(x, y, o)) {
-			if (abs(normal_x) > abs(normal_y)) {
-				x += normal_x; // move slowly until we are 1 pixel away from touching it
-			} else {
-				y += normal_y; // move slowly until we are 1 pixel away from touching it
-			}
+			x += normal_x; // move slowly until we are 1 pixel away from touching it
+			y += normal_y; // move slowly until we are 1 pixel away from touching it
 		}
 	}
 }
