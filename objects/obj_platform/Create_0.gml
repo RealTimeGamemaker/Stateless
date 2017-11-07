@@ -8,6 +8,8 @@ collidable.image_yscale = sprite_height / collidable.sprite_height;
 prev_x = x;
 prev_y = y;
 
+spd = 1;
+
 sht_right_and_back = path_add()
 path_add_point(sht_right_and_back, x, y, 100);
 path_add_point(sht_right_and_back, x + 100, y, 100);
