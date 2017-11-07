@@ -30,12 +30,12 @@ path_add_point(sht_up_and_back, x, y, 100);
 
 med_up_and_back = path_add()
 path_add_point(med_up_and_back, x, y, 100);
-path_add_point(med_up_and_back, x, y - 100, 100);
+path_add_point(med_up_and_back, x, y - 300, 100);
 path_add_point(med_up_and_back, x, y, 100);
 
 lng_up_and_back = path_add()
 path_add_point(lng_up_and_back, x, y, 100);
-path_add_point(lng_up_and_back, x, y - 100, 100);
+path_add_point(lng_up_and_back, x, y - 600, 100);
 path_add_point(lng_up_and_back, x, y, 100);
 
 sht_circle_down_clockwise = path_add()
