@@ -159,7 +159,7 @@ if (in_option_menu == true)
 	draw_text_with_shadow(view_center, 50, "Options", 4, 4);
 	
 	draw_set_font(font_popup_message);
-	draw_set_color(c_orange); // starring Whoopi Goldberg
+	draw_set_color(c_orange); 
 	draw_text_with_shadow(view_center, 200, "Go Back", 2, 2);
 	
 
