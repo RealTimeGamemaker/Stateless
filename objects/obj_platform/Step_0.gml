@@ -1,7 +1,7 @@
 /// @description Update
 
 if (not started) {
-	path_start(path, 1, path_action_restart, false);
+	path_start(path, spd, path_action_restart, false);
 	started = true;
 }
 
